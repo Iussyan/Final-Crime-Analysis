@@ -1,0 +1,28 @@
+id,incidentId,category,crimeType,crimeDescription
+1001,1001,Drug Activity,Public Drug Use,A public drug use incident reported involving suspicious activity.
+1002,1002,Drug Activity,Drug Paraphernalia Found,A drug paraphernalia incident reported involving suspicious activity.
+1003,1003,Environmental,Illegal Dumping,A illegal dumping incident reported involving suspicious activity.
+1005,1005,Traffic,Hit and Run,A hit and run incident reported involving suspicious activity.
+1009,1009,Disturbance,Public Intoxication,A public intoxication incident reported involving suspicious activity.
+1011,1011,Disturbance,Disorderly Conduct,A disorderly conduct incident reported involving suspicious activity.
+1014,1014,Theft,Pickpocketing,A pickpocketing incident reported involving suspicious activity.
+1015,1015,Theft,Bike Theft,A bicycle theft incident reported involving suspicious activity.
+1016,1016,Vandalism,Public Property Damage,A vehicle vandalism incident reported involving suspicious activity.
+1022,1022,Vandalism,Public Property Damage,A public property damage incident reported involving suspicious activity.
+1024,1024,Violence,Assault,A assault incident reported involving suspicious activity.
+1025,1025,Drug Activity,Overdose Incident,A substance abuse incident reported involving suspicious activity.
+1026,1026,Vandalism,Graffiti,A graffiti incident reported involving suspicious activity.
+1027,1027,Traffic,Hit and Run,A hit and run incident reported involving suspicious activity.
+1030,1030,Drug Activity,Drug Transaction,A drug possession incident reported involving suspicious activity.
+1032,1032,Drug Activity,Overdose Incident,A substance abuse incident reported involving suspicious activity.
+1034,1034,Traffic,Hit and Run,A hit and run incident reported involving suspicious activity.
+1036,1036,Traffic,Wrong Way Driving,A improper lane change incident reported involving suspicious activity.
+1037,1037,Vandalism,Graffiti,A graffiti incident reported involving suspicious activity.
+1038,1038,Drug Activity,Overdose Incident,A substance abuse incident reported involving suspicious activity.
+1040,1040,Drug Activity,Public Drug Use,A public drug use incident reported involving suspicious activity.
+1042,1042,Theft,Bag Snatching,A snatching incident reported involving suspicious activity.
+1043,1043,Traffic,Driving Without Headlights,A driving without license incident reported involving suspicious activity.
+1045,1045,Drug Activity,Drug Transaction,A drug possession incident reported involving suspicious activity.
+1046,1046,Traffic,Running Red Light,A red light violation incident reported involving suspicious activity.
+1048,1048,Environmental,Noise Pollution,A noise pollution incident reported involving suspicious activity.
+1049,1049,Disturbance,Public Intoxication,A public intoxication incident reported involving suspicious activity.

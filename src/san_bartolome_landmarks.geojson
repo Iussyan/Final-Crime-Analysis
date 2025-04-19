@@ -1,0 +1,2678 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-04-18T03:47:08Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/251004896",
+        "admin_level": "10",
+        "admin_type:PH": "barangay",
+        "is_in:city": "Quezon City",
+        "name": "San Bartolome",
+        "old_ref": "137404097",
+        "place": "quarter",
+        "population": "51148",
+        "postal_code": "1116",
+        "ref": "1381300097"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0347314,
+          14.7008508
+        ]
+      },
+      "id": "node/251004896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/255063243",
+        "alt_name": "Doña Faustina Subdivision",
+        "is_in:barangay": "San Bartolome",
+        "is_in:city": "Quezon City",
+        "name": "Doña Faustina",
+        "place": "neighbourhood"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0244877,
+          14.7086545
+        ]
+      },
+      "id": "node/255063243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/255064484",
+        "is_in:barangay": "San Bartolome",
+        "is_in:city": "Quezon City",
+        "name": "California Village",
+        "operator": "California Village Homeowners Association Inc.",
+        "operator:short": "CVHAI",
+        "place": "neighbourhood"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0210736,
+          14.7109285
+        ]
+      },
+      "id": "node/255064484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/255071101",
+        "addr:city": "Quezon City",
+        "addr:postcode": "1100",
+        "addr:street": "Pablo de la Cruz",
+        "amenity": "college",
+        "fixme": "denomination",
+        "name": "Manila Bible Seminary",
+        "religion": "christian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.029541,
+          14.70789
+        ]
+      },
+      "id": "node/255071101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/591436101",
+        "addr:city": "Quezon City",
+        "addr:housename": "Nova Square",
+        "addr:postcode": "1116",
+        "addr:street": "Quirino Highway",
+        "amenity": "fast_food",
+        "brand": "Jollibee",
+        "brand:wikidata": "Q37614",
+        "brand:wikipedia": "en:Jollibee",
+        "cuisine": "burger",
+        "name": "Jollibee",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0350098,
+          14.7011801
+        ]
+      },
+      "id": "node/591436101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/591554587",
+        "addr:city": "Quezon City",
+        "addr:housename": "Nova Square",
+        "addr:postcode": "1116",
+        "addr:street": "Quirino Highway",
+        "brand": "Goldilocks",
+        "brand:wikidata": "Q5580198",
+        "brand:wikipedia": "en:Goldilocks Bakeshop",
+        "name": "Goldilocks",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0352527,
+          14.7014627
+        ]
+      },
+      "id": "node/591554587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/591554590",
+        "addr:city": "Quezon City",
+        "addr:housename": "Nova Square",
+        "addr:postcode": "1116",
+        "addr:street": "Quirino Highway",
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "cuisine": "pizza",
+        "name": "Pizza Hut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0352337,
+          14.7013955
+        ]
+      },
+      "id": "node/591554590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/591569227",
+        "amenity": "marketplace",
+        "name": "Bonifacio Market"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0352534,
+          14.7010295
+        ]
+      },
+      "id": "node/591569227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/591574781",
+        "amenity": "dentist",
+        "name": "My Doc Cares Dental Clinic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0369738,
+          14.7038581
+        ]
+      },
+      "id": "node/591574781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/591574784",
+        "name": "F Saloon",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0370063,
+          14.7038961
+        ]
+      },
+      "id": "node/591574784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/591574786",
+        "name": "EZF Hardware",
+        "shop": "hardware"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.037031,
+          14.7039554
+        ]
+      },
+      "id": "node/591574786"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/597552231",
+        "addr:city": "Quezon City",
+        "addr:postcode": "1116",
+        "addr:street": "Quirino Highway",
+        "name": "Ocampo's Bakery",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0354185,
+          14.7013085
+        ]
+      },
+      "id": "node/597552231"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/597552232",
+        "addr:city": "Quezon City",
+        "addr:postcode": "1116",
+        "addr:street": "Quirino Highway",
+        "name": "Lionwood Enterprises",
+        "shop": "trade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0356633,
+          14.7015666
+        ]
+      },
+      "id": "node/597552232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2260054908",
+        "addr:city": "Quezon City",
+        "addr:street": "Quirino Highway",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "BPI",
+        "brand:wikidata": "Q2501256",
+        "brand:wikipedia": "en:Bank of the Philippine Islands",
+        "mapillary": "476774090047095",
+        "name": "BPI",
+        "official_name": "Bank of the Philippine Islands"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0346594,
+          14.7000154
+        ]
+      },
+      "id": "node/2260054908"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2508956779",
+        "amenity": "internet_cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0309302,
+          14.7101605
+        ]
+      },
+      "id": "node/2508956779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2508962019",
+        "shop": "florist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0348785,
+          14.7017704
+        ]
+      },
+      "id": "node/2508962019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2508962021",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0310697,
+          14.7101813
+        ]
+      },
+      "id": "node/2508962021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2508962023",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0313916,
+          14.7100931
+        ]
+      },
+      "id": "node/2508962023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2508962024",
+        "shop": "hairdresser"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.034916,
+          14.7018483
+        ]
+      },
+      "id": "node/2508962024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2565722476",
+        "amenity": "place_of_worship",
+        "name": "St Francis Xavier Parish",
+        "religion": "christian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0279041,
+          14.7003775
+        ]
+      },
+      "id": "node/2565722476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2682060043",
+        "addr:street": "Pablo dela Cruz",
+        "fixme": "name",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0343609,
+          14.706037
+        ]
+      },
+      "id": "node/2682060043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2682060053",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0313503,
+          14.7100645
+        ]
+      },
+      "id": "node/2682060053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4218808289",
+        "addr:street": "Quirino Highway",
+        "name": "Sanford SM Novaliches",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0380351,
+          14.7073652
+        ]
+      },
+      "id": "node/4218808289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4484819689",
+        "addr:street": "Quirino Highway",
+        "brand": "7-Eleven",
+        "brand:wikidata": "Q259340",
+        "brand:wikipedia": "en:7-Eleven",
+        "internet_access": "wlan",
+        "name": "7-Eleven",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0373747,
+          14.7039952
+        ]
+      },
+      "id": "node/4484819689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4484819691",
+        "addr:street": "Quirino Highway",
+        "amenity": "fast_food",
+        "name": "Siomai House",
+        "name:en": "Siomai House",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "takeaway": "only",
+        "website": "https://m.facebook.com/Siomai-House-Nova-Square-Branch-668277349994234/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0351142,
+          14.7015176
+        ]
+      },
+      "id": "node/4484819691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4550333494",
+        "addr:street": "Quirino Highway",
+        "name": "Mightee Mart",
+        "name:en": "Mightee Mart",
+        "opening_hours": "24/7",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0347421,
+          14.7001668
+        ]
+      },
+      "id": "node/4550333494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4588971692",
+        "name": "Rjd warehouse",
+        "name:en": "Rjd warehouse",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0250533,
+          14.7116964
+        ]
+      },
+      "id": "node/4588971692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4682342651",
+        "car_repair": "aircondition",
+        "name": "Be Cool AirCon Repair Shop",
+        "shop": "car_repair"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0285108,
+          14.7116312
+        ]
+      },
+      "id": "node/4682342651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4833643613",
+        "addr:housenumber": "41",
+        "addr:quarter": "San Bartolome",
+        "addr:street": "Aguirre Compound",
+        "leisure": "resort",
+        "name": "Auroraville Resort",
+        "phone": "9385980"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0314365,
+          14.7029322
+        ]
+      },
+      "id": "node/4833643613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4910922602",
+        "addr:street": "Quirino Highway",
+        "amenity": "payment_centre",
+        "name": "AMZ Bayad Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0352411,
+          14.7014659
+        ]
+      },
+      "id": "node/4910922602"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4929895409",
+        "addr:housename": "Novasquare Mall",
+        "addr:street": "Pablo dela Cruz Street",
+        "amenity": "fast_food",
+        "brand": "Dunkin' Donuts",
+        "brand:wikidata": "Q847743",
+        "brand:wikipedia": "en:Dunkin' Donuts",
+        "cuisine": "donut;coffee_shop",
+        "name": "Dunkin' Donuts",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0348982,
+          14.7015739
+        ]
+      },
+      "id": "node/4929895409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5055251614",
+        "addr:city": "Quezon City",
+        "addr:housename": "Nova Square",
+        "addr:postcode": "1116",
+        "addr:street": "Quirino Highway",
+        "amenity": "pharmacy",
+        "brand:wikidata": "Q6818610",
+        "brand:wikipedia": "en:Mercury Drug",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Mercury Drug",
+        "opening_hours": "24/7",
+        "operator": "Mercury Drug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0350651,
+          14.7012179
+        ]
+      },
+      "id": "node/5055251614"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5359866126",
+        "addr:street": "Quirino Highway",
+        "branch": "Quirino",
+        "name": "Kenwei Ebike",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "shop": "bicycle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0346052,
+          14.699951
+        ]
+      },
+      "id": "node/5359866126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5634403406",
+        "amenity": "fast_food",
+        "name": "Burgatory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0355422,
+          14.7011959
+        ]
+      },
+      "id": "node/5634403406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5648887388",
+        "name": "Ever Supermarket",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0356133,
+          14.7014712
+        ]
+      },
+      "id": "node/5648887388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6957644291",
+        "name": "Therester",
+        "tourism": "guest_house"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.022573,
+          14.711426
+        ]
+      },
+      "id": "node/6957644291"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6958974217",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0204331,
+          14.7047239
+        ]
+      },
+      "id": "node/6958974217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6959048093",
+        "addr:housenumber": "588",
+        "addr:street": "Carlos st san bartolome",
+        "name": "Carlos Hardware",
+        "shop": "hardware"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0431329,
+          14.7036756
+        ]
+      },
+      "id": "node/6959048093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6959048094",
+        "addr:housenumber": "72",
+        "addr:street": "S. Francisco",
+        "name": "a-won auto supply",
+        "phone": "41952558 9399006",
+        "shop": "car_parts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0429111,
+          14.7040912
+        ]
+      },
+      "id": "node/6959048094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6959191004",
+        "addr:housenumber": "3",
+        "addr:street": "Pink Street",
+        "leisure": "resort",
+        "name": "Emmanuel Resort",
+        "operator": "Rocha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0340914,
+          14.7085493
+        ]
+      },
+      "id": "node/6959191004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6994050285",
+        "addr:housenumber": "238",
+        "addr:street": "Pablo dela Cruz",
+        "name": "Pio Bautista Apartment",
+        "tourism": "apartment"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0341226,
+          14.706455
+        ]
+      },
+      "id": "node/6994050285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7543473486",
+        "addr:street": "Quirino Highway",
+        "amenity": "recycling",
+        "name": "ARB Junkshop",
+        "recycling_type": "centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0357445,
+          14.7026875
+        ]
+      },
+      "id": "node/7543473486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7543473487",
+        "amenity": "recycling",
+        "description": "junkshop",
+        "name": "Kiesen merchandise junkshop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0390195,
+          14.7055265
+        ]
+      },
+      "id": "node/7543473487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7543473686",
+        "addr:barangay": "San Bartolome",
+        "addr:city": "Quezon City",
+        "addr:neighbourhood": "California Village",
+        "addr:postcode": "1116",
+        "addr:province": "Metro Manila",
+        "addr:street": "East Berkely Street",
+        "addr:suburb": "Novaliches",
+        "amenity": "recycling",
+        "name": "Boss \"A\" Junkshop",
+        "recycling_type": "centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0257301,
+          14.7106757
+        ]
+      },
+      "id": "node/7543473686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915405791",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0209389,
+          14.7054743
+        ]
+      },
+      "id": "node/7915405791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915405792",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0193311,
+          14.7069942
+        ]
+      },
+      "id": "node/7915405792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915405801",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0192953,
+          14.7038158
+        ]
+      },
+      "id": "node/7915405801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915405894",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0190038,
+          14.7043624
+        ]
+      },
+      "id": "node/7915405894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406087",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0192717,
+          14.7053517
+        ]
+      },
+      "id": "node/7915406087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406088",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "B46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0195347,
+          14.7086235
+        ]
+      },
+      "id": "node/7915406088"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406288",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0215234,
+          14.7051372
+        ]
+      },
+      "id": "node/7915406288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406488",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0204622,
+          14.7053155
+        ]
+      },
+      "id": "node/7915406488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406489",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0188839,
+          14.7049283
+        ]
+      },
+      "id": "node/7915406489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406593",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0204552,
+          14.7050302
+        ]
+      },
+      "id": "node/7915406593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406694",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0190553,
+          14.7066123
+        ]
+      },
+      "id": "node/7915406694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406695",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "34"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0194288,
+          14.7062945
+        ]
+      },
+      "id": "node/7915406695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406696",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0192015,
+          14.7060278
+        ]
+      },
+      "id": "node/7915406696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406697",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "32"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0192606,
+          14.7056758
+        ]
+      },
+      "id": "node/7915406697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915406700",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0191257,
+          14.7040763
+        ]
+      },
+      "id": "node/7915406700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7915407485",
+        "is_in:neighbourhood": "Goodwill Homes I",
+        "place": "city_block",
+        "ref": "29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0188975,
+          14.7046188
+        ]
+      },
+      "id": "node/7915407485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8152853812",
+        "addr:city": "Quezon City",
+        "addr:housenumber": "8",
+        "addr:neighbourhood": "California Village",
+        "addr:street": "Katipunan Avenue",
+        "addr:suburb": "Novaliches",
+        "addr:village": "San Bartolome",
+        "contact:email": "sw.southwaytrading@yahoo.com",
+        "contact:facebook": "SouthwayTradingQC",
+        "contact:phone": "+63289119882",
+        "contact:twitter": "SouthwayTrading",
+        "contact:website": "https://southwaytrading.com",
+        "name": "Southway Trading",
+        "opening_hours": "Mo-Sa 08:00-17:00",
+        "postal_code": "1116",
+        "shop": "hardware",
+        "source:name": "extrapolated from Note 2437146"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0207839,
+          14.7119156
+        ]
+      },
+      "id": "node/8152853812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8246603802",
+        "amenity": "atm",
+        "brand": "Metrobank",
+        "brand:wikidata": "Q1925799",
+        "brand:wikipedia": "en:Metrobank (Philippines)",
+        "name": "Metrobank",
+        "operator": "Metrobank",
+        "operator:wikidata": "Q1925799",
+        "operator:wikipedia": "en:Metrobank (Philippines)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0386242,
+          14.7080894
+        ]
+      },
+      "id": "node/8246603802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8246603803",
+        "alt_name": "Banco de Oro",
+        "amenity": "bank",
+        "brand": "BDO",
+        "brand:wikidata": "Q4854129",
+        "brand:wikipedia": "en:Banco de Oro",
+        "name": "BDO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0383778,
+          14.7082112
+        ]
+      },
+      "id": "node/8246603803"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8246603804",
+        "brand": "Ace Hardware",
+        "brand:wikidata": "Q4672981",
+        "brand:wikipedia": "en:Ace Hardware",
+        "name": "Ace Hardware",
+        "shop": "doityourself"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0379697,
+          14.7083242
+        ]
+      },
+      "id": "node/8246603804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8246603805",
+        "brand": "National Book Store",
+        "brand:wikidata": "Q6971094",
+        "brand:wikipedia": "en:National Book Store",
+        "name": "National Book Store",
+        "shop": "books"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0378322,
+          14.7083767
+        ]
+      },
+      "id": "node/8246603805"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8246603806",
+        "brand": "Watsons",
+        "brand:wikidata": "Q7974785",
+        "brand:wikipedia": "en:Watsons",
+        "name": "Watsons",
+        "shop": "chemist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0381522,
+          14.7082549
+        ]
+      },
+      "id": "node/8246603806"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281987017",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0257744,
+          14.7075577
+        ]
+      },
+      "id": "node/8281987017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281991475",
+        "name": "Klong’s Store",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0265865,
+          14.7106636
+        ]
+      },
+      "id": "node/8281991475"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281991477",
+        "addr:barangay": "San Bartolome",
+        "addr:city": "Quezon City",
+        "addr:postcode": "1116",
+        "addr:province": "Metro Manila",
+        "addr:street": "Magsaysay Avenue",
+        "addr:suburb": "Novaliches",
+        "amenity": "recycling",
+        "name": "Shaina Junk Shop",
+        "recycling_type": "centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0261283,
+          14.7100552
+        ]
+      },
+      "id": "node/8281991477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281991478",
+        "addr:barangay": "San Bartolome",
+        "addr:city": "Quezon City",
+        "addr:postcode": "1116",
+        "addr:province": "Metro Manila",
+        "addr:street": "Magsaysay Avenue",
+        "addr:suburb": "Novaliches",
+        "name": "Holy Star Hardware and Construction Supply",
+        "shop": "hardware"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0263293,
+          14.7092518
+        ]
+      },
+      "id": "node/8281991478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281991479",
+        "addr:barangay": "San Bartolome",
+        "addr:city": "Quezon City",
+        "addr:postcode": "1116",
+        "addr:province": "Metro Manila",
+        "addr:street": "Magsaysay Avenue",
+        "addr:suburb": "Novaliches",
+        "name": "Eunice Store",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0262889,
+          14.7091721
+        ]
+      },
+      "id": "node/8281991479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281991480",
+        "addr:barangay": "San Bartolome",
+        "addr:city": "Quezon City",
+        "addr:postcode": "1116",
+        "addr:province": "Metro Manila",
+        "addr:street": "Magsaysay Avenue",
+        "addr:suburb": "Novaliches",
+        "name": "Xyna Store",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0261728,
+          14.7087003
+        ]
+      },
+      "id": "node/8281991480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281991481",
+        "addr:city": "Quezon City",
+        "addr:street": "Magsaysay Avenue",
+        "name": "AMS Motorcycle Parts & Accessories Shop",
+        "repair": "motorcycle",
+        "shop": "motorcycle_parts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0270607,
+          14.7104215
+        ]
+      },
+      "id": "node/8281991481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281996662",
+        "addr:street": "Pablo de la Cruz",
+        "brand": "7-Eleven",
+        "brand:wikidata": "Q259340",
+        "brand:wikipedia": "en:7-Eleven",
+        "mapillary": "205981154851652",
+        "name": "7-Eleven",
+        "opening_hours": "24/7",
+        "shop": "convenience",
+        "source": "extrapolation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0281541,
+          14.7106145
+        ]
+      },
+      "id": "node/8281996662"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8281996663",
+        "name": "Tasia Store",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0275992,
+          14.710591
+        ]
+      },
+      "id": "node/8281996663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282004323",
+        "name": "Athiena Store",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0282596,
+          14.7076225
+        ]
+      },
+      "id": "node/8282004323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282004324",
+        "shop": "motorcycle_repair"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.028815,
+          14.7099594
+        ]
+      },
+      "id": "node/8282004324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282004325",
+        "shop": "motorcycle_repair"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0283009,
+          14.7104048
+        ]
+      },
+      "id": "node/8282004325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282040119",
+        "amenity": "restaurant",
+        "name": "Farinas Ilocos Empanada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0348972,
+          14.7016189
+        ]
+      },
+      "id": "node/8282040119"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282040121",
+        "amenity": "fast_food",
+        "brand": "Angel's Burger",
+        "brand:wikidata": "Q62267228",
+        "cuisine": "burger",
+        "name": "Angel's Burger",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0348843,
+          14.7017371
+        ]
+      },
+      "id": "node/8282040121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282055251",
+        "amenity": "school",
+        "name": "St. Nicholas Of Bari School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0314718,
+          14.7015174
+        ]
+      },
+      "id": "node/8282055251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8282305149",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0257627,
+          14.707529
+        ]
+      },
+      "id": "node/8282305149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8434782620",
+        "leisure": "fitness_centre",
+        "name": "Urban Jungle Fitness"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.034963,
+          14.7013567
+        ]
+      },
+      "id": "node/8434782620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8594492074",
+        "shop": "motorcycle_repair"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0258193,
+          14.7075523
+        ]
+      },
+      "id": "node/8594492074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8599370624",
+        "amenity": "fast_food",
+        "cuisine": "chicken",
+        "name": "Mang Inasal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0390981,
+          14.7076337
+        ]
+      },
+      "id": "node/8599370624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8599370625",
+        "amenity": "fast_food",
+        "brand": "Jollibee",
+        "brand:wikidata": "Q37614",
+        "brand:wikipedia": "en:Jollibee",
+        "cuisine": "burger",
+        "name": "Jollibee",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0391276,
+          14.7077375
+        ]
+      },
+      "id": "node/8599370625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8599389046",
+        "name": "Motorstar",
+        "shop": "motorcycle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0381432,
+          14.7061225
+        ]
+      },
+      "id": "node/8599389046"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8770669019",
+        "addr:street": "Quirino Highway",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0383933,
+          14.7080281
+        ]
+      },
+      "id": "node/8770669019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9430046320",
+        "brand": "Anytime Fitness",
+        "brand:wikidata": "Q4778364",
+        "brand:wikipedia": "en:Anytime Fitness",
+        "leisure": "fitness_centre",
+        "name": "Anytime Fitness"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0379452,
+          14.7075395
+        ]
+      },
+      "id": "node/9430046320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9430046321",
+        "amenity": "fast_food",
+        "brand": "Popeyes",
+        "brand:wikidata": "Q1330910",
+        "brand:wikipedia": "en:Popeyes",
+        "cuisine": "chicken",
+        "name": "Popeyes",
+        "official_name": "Popeyes Louisiana Kitchen",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.038192,
+          14.7079339
+        ]
+      },
+      "id": "node/9430046321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9430046322",
+        "amenity": "fast_food",
+        "brand": "Mang Inasal",
+        "brand:wikidata": "Q6748573",
+        "brand:wikipedia": "en:Mang Inasal",
+        "cuisine": "barbecue",
+        "name": "Mang Inasal",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0369662,
+          14.7081025
+        ]
+      },
+      "id": "node/9430046322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9430046323",
+        "name": "SM Supermarket",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0384027,
+          14.7079764
+        ]
+      },
+      "id": "node/9430046323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9430046324",
+        "amenity": "taxi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0384906,
+          14.7079627
+        ]
+      },
+      "id": "node/9430046324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9430046325",
+        "amenity": "cinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0374432,
+          14.7077974
+        ]
+      },
+      "id": "node/9430046325"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9430046326",
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "name": "Zarks"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0373318,
+          14.7084444
+        ]
+      },
+      "id": "node/9430046326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9430046327",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "Macao Imperial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0371583,
+          14.7079617
+        ]
+      },
+      "id": "node/9430046327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9523240817",
+        "name": "Uratex",
+        "shop": "furniture"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0390586,
+          14.707929
+        ]
+      },
+      "id": "node/9523240817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9523240818",
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "food:noodles": "yes",
+        "food:pares": "yes",
+        "name": "Tata Ilio Pares and Mami House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0391261,
+          14.7082276
+        ]
+      },
+      "id": "node/9523240818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602644754",
+        "alt_name": "Dunkin' Donuts",
+        "amenity": "fast_food",
+        "brand": "Dunkin'",
+        "brand:wikidata": "Q847743",
+        "brand:wikipedia": "en:Dunkin' Donuts",
+        "cuisine": "donut;coffee_shop",
+        "name": "Dunkin'",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0384556,
+          14.7081716
+        ]
+      },
+      "id": "node/9602644754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602644755",
+        "amenity": "fast_food",
+        "name": "Bulalo World"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0369428,
+          14.7081834
+        ]
+      },
+      "id": "node/9602644755"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602644756",
+        "amenity": "fast_food",
+        "name": "King Sisig"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0369059,
+          14.7082549
+        ]
+      },
+      "id": "node/9602644756"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602644757",
+        "amenity": "fast_food",
+        "brand": "Jollibee",
+        "brand:wikidata": "Q37614",
+        "brand:wikipedia": "en:Jollibee",
+        "cuisine": "burger",
+        "name": "Jollibee",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0379223,
+          14.7080672
+        ]
+      },
+      "id": "node/9602644757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602644758",
+        "name": "Penshoppe",
+        "shop": "clothes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0378502,
+          14.7080744
+        ]
+      },
+      "id": "node/9602644758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602644760",
+        "alt_name": "Banco de Oro",
+        "amenity": "atm",
+        "brand": "BDO",
+        "brand:wikidata": "Q4854129",
+        "brand:wikipedia": "en:Banco de Oro",
+        "name": "BDO",
+        "operator": "BDO",
+        "operator:wikidata": "Q4854129",
+        "operator:wikipedia": "en:Banco de Oro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0369151,
+          14.7081441
+        ]
+      },
+      "id": "node/9602644760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602644761",
+        "amenity": "fast_food",
+        "brand": "Dairy Queen",
+        "brand:wikidata": "Q1141226",
+        "brand:wikipedia": "en:Dairy Queen",
+        "cuisine": "ice_cream;burger",
+        "name": "Dairy Queen",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0381363,
+          14.7080455
+        ]
+      },
+      "id": "node/9602644761"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602647379",
+        "access": "yes",
+        "amenity": "toilets",
+        "toilets:disposal": "flush",
+        "unisex": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.037002,
+          14.7083747
+        ]
+      },
+      "id": "node/9602647379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649071",
+        "amenity": "fast_food",
+        "cuisine": "juice",
+        "name": "3 Seasons"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0386959,
+          14.7079818
+        ]
+      },
+      "id": "node/9602649071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649072",
+        "amenity": "fast_food",
+        "name": "Master Siomai"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0386479,
+          14.707989
+        ]
+      },
+      "id": "node/9602649072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649073",
+        "amenity": "fast_food",
+        "name": "Waffle Time"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0386063,
+          14.7080006
+        ]
+      },
+      "id": "node/9602649073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649074",
+        "name": "Allis",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.038562,
+          14.7080078
+        ]
+      },
+      "id": "node/9602649074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649075",
+        "name": "Yamang Bukid",
+        "shop": "herbalist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0385851,
+          14.7080936
+        ]
+      },
+      "id": "node/9602649075"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649076",
+        "amenity": "atm",
+        "brand": "EastWest Unibank",
+        "brand:wikidata": "Q5327595",
+        "brand:wikipedia": "en:EastWest Bank",
+        "name": "EastWest Unibank",
+        "operator": "EastWest Unibank",
+        "operator:wikidata": "Q5327595",
+        "operator:wikipedia": "en:EastWest Bank"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0386386,
+          14.7080864
+        ]
+      },
+      "id": "node/9602649076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649077",
+        "amenity": "atm",
+        "brand": "PSBank",
+        "brand:wikidata": "Q7185203",
+        "brand:wikipedia": "en:PSBank",
+        "name": "PSBank",
+        "operator": "PSBank",
+        "operator:wikidata": "Q7185203",
+        "operator:wikipedia": "en:PSBank"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0386525,
+          14.7080864
+        ]
+      },
+      "id": "node/9602649077"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649078",
+        "amenity": "atm",
+        "brand": "Bank of Commerce",
+        "brand:wikidata": "Q4856092",
+        "brand:wikipedia": "en:Bank of Commerce",
+        "name": "Bank of Commerce",
+        "operator": "Bank of Commerce",
+        "operator:wikidata": "Q4856092",
+        "operator:wikipedia": "en:Bank of Commerce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0386664,
+          14.7080864
+        ]
+      },
+      "id": "node/9602649078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9602649079",
+        "amenity": "fast_food"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0387172,
+          14.7080703
+        ]
+      },
+      "id": "node/9602649079"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9758664199",
+        "addr:street": "Katipunan Avenue",
+        "fixme": "name",
+        "mapillary": "161374089593542",
+        "shop": "tattoo",
+        "source": "extrapolation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0228063,
+          14.7024749
+        ]
+      },
+      "id": "node/9758664199"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9758664200",
+        "addr:street": "Katipunan Avenue",
+        "fixme": "name",
+        "mapillary": "161374089593542",
+        "shop": "florist",
+        "source": "extrapolation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0228244,
+          14.702434
+        ]
+      },
+      "id": "node/9758664200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10054316884",
+        "amenity": "restaurant",
+        "name": "Koneksiyon Famous Wings"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0211641,
+          14.7104466
+        ]
+      },
+      "id": "node/10054316884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10056593968",
+        "name": "Emera Hardware & Construction Supplies",
+        "shop": "trade",
+        "trade": "building_supplies"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0313465,
+          14.7078205
+        ]
+      },
+      "id": "node/10056593968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10056593969",
+        "name": "Riczel Store",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0319956,
+          14.7080741
+        ]
+      },
+      "id": "node/10056593969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10056593970",
+        "name": "Autolux.PH",
+        "shop": "car_repair"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.030924,
+          14.7078595
+        ]
+      },
+      "id": "node/10056593970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10056618820",
+        "name": "SEC Motosupply",
+        "parts": "yes",
+        "shop": "motorcycle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0354462,
+          14.7016881
+        ]
+      },
+      "id": "node/10056618820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10056618821",
+        "amenity": "driving_school",
+        "name": "Smart Driving School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0354637,
+          14.7017167
+        ]
+      },
+      "id": "node/10056618821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10056618822",
+        "name": "SPO Motor Parts",
+        "parts": "yes",
+        "shop": "motorcycle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0358821,
+          14.7018834
+        ]
+      },
+      "id": "node/10056618822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10059925732",
+        "access": "customers",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "4",
+        "operator": "7-Eleven"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0347804,
+          14.7010434
+        ]
+      },
+      "id": "node/10059925732"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10076128189",
+        "amenity": "compressed_air",
+        "operator": "Flying V"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0435934,
+          14.7025345
+        ]
+      },
+      "id": "node/10076128189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10076128190",
+        "addr:street": "Carlos Street",
+        "mapillary": "669726567582406",
+        "shop": "gas",
+        "source": "extrapolation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0435431,
+          14.7026338
+        ]
+      },
+      "id": "node/10076128190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10076267117",
+        "leisure": "garden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0396147,
+          14.7020189
+        ]
+      },
+      "id": "node/10076267117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10826167914",
+        "name": "Hacienda Ibañez",
+        "tourism": "apartment"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0312637,
+          14.7027353
+        ]
+      },
+      "id": "node/10826167914"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10895335556",
+        "addr:barangay": "San Bartolome",
+        "addr:city": "Quezon City",
+        "addr:neighbourhood": "California Village",
+        "addr:postcode": "1116",
+        "addr:province": "Metro Manila",
+        "addr:street": "Oregon Street",
+        "addr:suburb": "Novaliches",
+        "contact:facebook": "https://www.facebook.com/Lagundinosbikeshop",
+        "contact:phone": "+639190036680;+639602721699;+639277618589",
+        "name": "Lagundino's Bike Shop",
+        "service:bicycle:second_hand": "yes",
+        "shop": "second_hand",
+        "start_date": "2014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0249208,
+          14.7099666
+        ]
+      },
+      "id": "node/10895335556"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10895346581",
+        "addr:barangay": "San Bartolome",
+        "addr:city": "Quezon City",
+        "addr:housenumber": "4-D",
+        "addr:neighbourhood": "California Village",
+        "addr:postcode": "1116",
+        "addr:province": "Metro Manila",
+        "addr:street": "Oregon Street",
+        "addr:suburb": "Novaliches",
+        "contact:facebook": "https://www.facebook.com/profile.php?id=100063916776135",
+        "name": "Pedalife15",
+        "service:bicycle:second_hand": "yes",
+        "shop": "second_hand",
+        "start_date": "2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0249038,
+          14.7098049
+        ]
+      },
+      "id": "node/10895346581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11086063053",
+        "name": "Hacienda de Ibañez",
+        "tourism": "apartment"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0312212,
+          14.7027311
+        ]
+      },
+      "id": "node/11086063053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11088845405",
+        "name": "Underchargers",
+        "shop": "car_repair"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0354143,
+          14.7043581
+        ]
+      },
+      "id": "node/11088845405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11593167331",
+        "addr:barangay": "San Bartolome",
+        "addr:city": "Quezon City",
+        "addr:district": "Novaliches",
+        "addr:neighbourhood": "California Village",
+        "addr:postcode": "1116",
+        "addr:province": "Metro Manila",
+        "addr:street": "Katipunan Avenue",
+        "leisure": "resort",
+        "name": "California Gardens Resort"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0208932,
+          14.7090995
+        ]
+      },
+      "id": "node/11593167331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11637326635",
+        "leisure": "hackerspace",
+        "name": "Home"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0312523,
+          14.7026902
+        ]
+      },
+      "id": "node/11637326635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12069406713",
+        "emergency": "assembly_point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0385935,
+          14.7063217
+        ]
+      },
+      "id": "node/12069406713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12069406715",
+        "amenity": "parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0388245,
+          14.7060781
+        ]
+      },
+      "id": "node/12069406715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12069406720",
+        "amenity": "compressed_air",
+        "fee": "no",
+        "operator": "PTT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.038628,
+          14.7060408
+        ]
+      },
+      "id": "node/12069406720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12086510935",
+        "emergency": "emergency_ward_entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0345064,
+          14.7003643
+        ]
+      },
+      "id": "node/12086510935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12086510938",
+        "amenity": "shelter",
+        "shelter_type": "weather_shelter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0347706,
+          14.7008978
+        ]
+      },
+      "id": "node/12086510938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12086510940",
+        "emergency": "ambulance_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0346647,
+          14.7005771
+        ]
+      },
+      "id": "node/12086510940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12320238701",
+        "amenity": "atm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.023134,
+          14.7111732
+        ]
+      },
+      "id": "node/12320238701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12320240001",
+        "name": "anabelstore",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0227688,
+          14.71121
+        ]
+      },
+      "id": "node/12320240001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12320243301",
+        "name": "Anna's store",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0225701,
+          14.7114161
+        ]
+      },
+      "id": "node/12320243301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12320243302",
+        "name": "ema store",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0232808,
+          14.7115062
+        ]
+      },
+      "id": "node/12320243302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12320245301",
+        "name": "China store",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0230087,
+          14.711393
+        ]
+      },
+      "id": "node/12320245301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12728593720",
+        "addr:city": "Quezon City",
+        "addr:street": "Pablo dela Cruz Street",
+        "brand": "Dali",
+        "brand:wikidata": "Q119854219",
+        "name": "Dali",
+        "opening_hours": "24/7",
+        "shop": "convenience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0345524,
+          14.7049035
+        ]
+      },
+      "id": "node/12728593720"
+    }
+  ]
+}

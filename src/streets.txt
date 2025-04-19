@@ -1,0 +1,258 @@
+<optgroup label="Select a street"></optgroup>
+<optgroup label="A">
+<option value="A. Bonifacio Street">A. Bonifacio Street</option>
+<option value="A. Ramirez Street">A. Ramirez Street</option>
+<option value="Acacia Street">Acacia Street</option>
+<option value="Acme Road">Acme Road</option>
+<option value="Aguirre Compound">Aguirre Compound</option>
+<option value="Amethyst Street">Amethyst Street</option>
+<option value="Amity Street Extension">Amity Street Extension</option>
+<option value="Amity Street">Amity Street</option>
+<option value="Angela Avenue">Angela Avenue</option>
+<option value="Aratilis Street">Aratilis Street</option>
+<option value="Arellano Street">Arellano Street</option>
+<option value="Aries Street">Aries Street</option>
+<option value="Armani Street">Armani Street</option>
+<option value="Assisi Street">Assisi Street</option>
+<option value="Atlas Interior">Atlas Interior</option>
+<option value="Atlas Road">Atlas Road</option>
+</optgroup>
+<optgroup label="B">
+<option value="B. Evangelista Drive">B. Evangelista Drive</option>
+<option value="Balete Street">Balete Street</option>
+<option value="Bally Street">Bally Street</option>
+<option value="Barangay San Bartolome Road">Barangay San Bartolome Road</option>
+<option value="Bayani">Bayani</option>
+<option value="Begonia Street">Begonia Street</option>
+<option value="Belen Street">Belen Street</option>
+<option value="Benevolence Street">Benevolence Street</option>
+<option value="Beta Street">Beta Street</option>
+<option value="Black Quail Street">Black Quail Street</option>
+<option value="Blue Bird Street">Blue Bird Street</option>
+<option value="Blue Street">Blue Street</option>
+<option value="Bougainvilla Street">Bougainvilla Street</option>
+<option value="Burberry Street">Burberry Street</option>
+<option value="Butalid Road">Butalid Road</option>
+<option value="Bvlgari Street">Bvlgari Street</option>
+</optgroup>
+<optgroup label="C">
+<option value="Calugas Street">Calugas Street</option>
+<option value="Camia Street">Camia Street</option>
+<option value="Carlos Extension">Carlos Extension</option>
+<option value="Carlos Street">Carlos Street</option>
+<option value="Champaca Street">Champaca Street</option>
+<option value="Chanel Street">Chanel Street</option>
+<option value="Charity Street">Charity Street</option>
+<option value="Courage Street">Courage Street</option>
+<option value="Crystal Street">Crystal Street</option>
+</optgroup>
+<optgroup label="D">
+<option value="Dahlia Street">Dahlia Street</option>
+<option value="Davies Lane">Davies Lane</option>
+<option value="Diamond Avenue">Diamond Avenue</option>
+<option value="Diamond Street">Diamond Street</option>
+<option value="Diligence Street">Diligence Street</option>
+<option value="Dizon Street">Dizon Street</option>
+<option value="DKNY Street">DKNY Street</option>
+</optgroup>
+<optgroup label="E">
+<option value="E. Aguinaldo Street">E. Aguinaldo Street</option>
+<option value="East Berkely Street">East Berkely Street</option>
+<option value="East Fresno Street">East Fresno Street</option>
+<option value="East Los Angeles Street">East Los Angeles Street</option>
+<option value="Efficiency Street">Efficiency Street</option>
+<option value="Emerald Street">Emerald Street</option>
+<option value="Ester Street">Ester Street</option>
+<option value="Evangelista Street">Evangelista Street</option>
+</optgroup>
+<optgroup label="F">
+<option value="F. Ibarra Street">F. Ibarra Street</option>
+<option value="Faith Street">Faith Street</option>
+<option value="Fern Street">Fern Street</option>
+<option value="First Street">First Street</option>
+<option value="Franciscan Street">Franciscan Street</option>
+<option value="Fremont Street">Fremont Street</option>
+</optgroup>
+<optgroup label="G">
+<option value="Gamma Street">Gamma Street</option>
+<option value="Garcia Street Extension">Garcia Street Extension</option>
+<option value="Garcia Street">Garcia Street</option>
+<option value="Gemini Street">Gemini Street</option>
+<option value="Generous Street">Generous Street</option>
+<option value="Givenchy Street">Givenchy Street</option>
+<option value="Gold Street">Gold Street</option>
+<option value="Golden Peacock Street">Golden Peacock Street</option>
+<option value="Goodwill Avenue">Goodwill Avenue</option>
+<option value="Gozum Street">Gozum Street</option>
+<option value="Gray Parrot Street">Gray Parrot Street</option>
+<option value="Green Avenue">Green Avenue</option>
+<option value="Green Peasant Street">Green Peasant Street</option>
+<option value="Green Street">Green Street</option>
+<option value="Gucci Street">Gucci Street</option>
+<option value="Guijo Street">Guijo Street</option>
+</optgroup>
+<optgroup label="H">
+<option value="Helpful Street">Helpful Street</option>
+<option value="Hermes Street">Hermes Street</option>
+<option value="Holy Cross Road">Holy Cross Road</option>
+<option value="Honesty Street">Honesty Street</option>
+</optgroup>
+<optgroup label="I">
+<option value="Industrious Street">Industrious Street</option>
+<option value="Ivory Street">Ivory Street</option>
+</optgroup>
+<optgroup label="J">
+<option value="J. P. Rizal Street">J. P. Rizal Street</option>
+<option value="Jade Street">Jade Street</option>
+<option value="Jose P. Laurel Street">Jose P. Laurel Street</option>
+<option value="Joy Street">Joy Street</option>
+<option value="Justice Street">Justice Street</option>
+</optgroup>
+<optgroup label="K">
+<option value="Kalinisan Street">Kalinisan Street</option>
+<option value="Kamagong Street">Kamagong Street</option>
+<option value="Kappa Street">Kappa Street</option>
+<option value="Katipunan Avenue">Katipunan Avenue</option>
+<option value="Katipunan Extension">Katipunan Extension</option>
+<option value="Kindness Avenue">Kindness Avenue</option>
+</optgroup>
+<optgroup label="L">
+<option value="L. Figueroa Compound">L. Figueroa Compound</option>
+<option value="L. Vuitton Street">L. Vuitton Street</option>
+<option value="Lapu-lapu Street">Lapu-lapu Street</option>
+<option value="Leo Street">Leo Street</option>
+<option value="Libra Street">Libra Street</option>
+<option value="Lime Street">Lime Street</option>
+<option value="Love Street">Love Street</option>
+<option value="Luck Street">Luck Street</option>
+<option value="Luz Street">Luz Street</option>
+</optgroup>
+<optgroup label="M">
+<option value="Madre Cacao Street">Madre Cacao Street</option>
+<option value="Magsaysay Avenue">Magsaysay Avenue</option>
+<option value="Magsaysay Extension">Magsaysay Extension</option>
+<option value="Mahogany Street">Mahogany Street</option>
+<option value="Makiling Trail">Makiling Trail</option>
+<option value="Mangga Street">Mangga Street</option>
+<option value="Marcos Street">Marcos Street</option>
+<option value="Metro Avenue">Metro Avenue</option>
+<option value="Mint Street">Mint Street</option>
+<option value="Mocking Bird Street">Mocking Bird Street</option>
+<option value="Moss Street">Moss Street</option>
+<option value="Mount Makiling Sipit Trail">Mount Makiling Sipit Trail</option>
+<option value="Mulawin Street">Mulawin Street</option>
+<option value="Mulberry Street">Mulberry Street</option>
+<option value="Myrtle Street">Myrtle Street</option>
+</optgroup>
+<optgroup label="N">
+<option value="Narra Street">Narra Street</option>
+<option value="New Jersey Village">New Jersey Village</option>
+<option value="Noguera Street">Noguera Street</option>
+<option value="North Point Street">North Point Street</option>
+</optgroup>
+<optgroup label="O">
+<option value="Obedience Street">Obedience Street</option>
+<option value="Olive Street">Olive Street</option>
+<option value="Omicron Street">Omicron Street</option>
+<option value="Onyx Street">Onyx Street</option>
+<option value="Opal Street">Opal Street</option>
+<option value="Orange Street">Orange Street</option>
+<option value="Oregon Street">Oregon Street</option>
+<option value="Osmeña Street">Osmeña Street</option>
+</optgroup>
+<optgroup label="P">
+<option value="P. Macapagal Street">P. Macapagal Street</option>
+<option value="Pablo dela Cruz Street">Pablo dela Cruz Street</option>
+<option value="Pearl Street">Pearl Street</option>
+<option value="Peter Street">Peter Street</option>
+<option value="Pilaring Street">Pilaring Street</option>
+<option value="Pink Flamingo Street">Pink Flamingo Street</option>
+<option value="Pink Street">Pink Street</option>
+<option value="Pisces Street">Pisces Street</option>
+<option value="Prada Street">Prada Street</option>
+<option value="Purity Street">Purity Street</option>
+</optgroup>
+<optgroup label="Q">
+<option value="Quartz Street">Quartz Street</option>
+<option value="Quezon Street">Quezon Street</option>
+<option value="Quirino Highway">Quirino Highway</option>
+<option value="Quirino Street">Quirino Street</option>
+</optgroup>
+<optgroup label="R">
+<option value="Rainbow Avenue">Rainbow Avenue</option>
+<option value="Rainbow Street">Rainbow Street</option>
+<option value="Ramirez Street">Ramirez Street</option>
+<option value="Ramos Street">Ramos Street</option>
+<option value="Recto Street">Recto Street</option>
+<option value="Red Macau Street">Red Macau Street</option>
+<option value="Riverside Street">Riverside Street</option>
+<option value="Rockville Avenue">Rockville Avenue</option>
+<option value="Rosal Street">Rosal Street</option>
+<option value="Ruby Street">Ruby Street</option>
+</optgroup>
+<optgroup label="S">
+<option value="S. Francisco Street">S. Francisco Street</option>
+<option value="Saint Andrew Street">Saint Andrew Street</option>
+<option value="Saint Anthony Street">Saint Anthony Street</option>
+<option value="Saint James Street">Saint James Street</option>
+<option value="Saint John Street">Saint John Street</option>
+<option value="Saint Joseph Street">Saint Joseph Street</option>
+<option value="Saint Jude Street">Saint Jude Street</option>
+<option value="Saint Mark Street">Saint Mark Street</option>
+<option value="Saint Matthew Street">Saint Matthew Street</option>
+<option value="Saint Michael Street">Saint Michael Street</option>
+<option value="Saint Peter Street">Saint Peter Street</option>
+<option value="Saint Philip Street">Saint Philip Street</option>
+<option value="Saint Simon Street">Saint Simon Street</option>
+<option value="Saint Thaddeus Street">Saint Thaddeus Street</option>
+<option value="Saint Thomas Street">Saint Thomas Street</option>
+<option value="Sampaguita Street">Sampaguita Street</option>
+<option value="San Jose Street">San Jose Street</option>
+<option value="Santa Barbara Street">Santa Barbara Street</option>
+<option value="Santa Cruz Street">Santa Cruz Street</option>
+<option value="Santa Maria Street">Santa Maria Street</option>
+<option value="Santan Street">Santan Street</option>
+<option value="Saphire Street">Saphire Street</option>
+<option value="Sapphire Street">Sapphire Street</option>
+<option value="Second Street">Second Street</option>
+<option value="Senading Street">Senading Street</option>
+<option value="Sikatuna Street">Sikatuna Street</option>
+<option value="Silver Gull Street">Silver Gull Street</option>
+<option value="Silver Street">Silver Street</option>
+<option value="South Luzon Expressway">South Luzon Expressway</option>
+<option value="Sugar Bird Street">Sugar Bird Street</option>
+</optgroup>
+<optgroup label="T">
+<option value="Talisay Street">Talisay Street</option>
+<option value="Tamarind Street">Tamarind Street</option>
+<option value="Tanguile Street">Tanguile Street</option>
+<option value="Taurus Street">Taurus Street</option>
+<option value="Tomford Street">Tomford Street</option>
+<option value="Topaz Street">Topaz Street</option>
+</optgroup>
+<optgroup label="U">
+<option value="Upper Garcia Extension">Upper Garcia Extension</option>
+</optgroup>
+<optgroup label="V">
+<option value="V. Bernardino Road">V. Bernardino Road</option>
+<option value="Versace Street">Versace Street</option>
+<option value="Villamor Street">Villamor Street</option>
+<option value="Violet Street">Violet Street</option>
+<option value="Virgo Street">Virgo Street</option>
+</optgroup>
+<optgroup label="W">
+<option value="Waling Waling Street">Waling Waling Street</option>
+<option value="West Berkeley Street">West Berkeley Street</option>
+<option value="West Fresno Street">West Fresno Street</option>
+<option value="West Los Angeles Street">West Los Angeles Street</option>
+<option value="West San Francisco Street">West San Francisco Street</option>
+<option value="West San Jose Street">West San Jose Street</option>
+<option value="White Duck">White Duck</option>
+</optgroup>
+<optgroup label="Y">
+<option value="Yakal Street">Yakal Street</option>
+<option value="Yellow Bird Street">Yellow Bird Street</option>
+</optgroup>
+<optgroup label="Z">
+<option value="Zircon Street">Zircon Street</option>
+</optgroup>
