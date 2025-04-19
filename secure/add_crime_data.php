@@ -19,12 +19,27 @@ $contactNumber = $_POST['contact_number'] ?? null;
 $errors = [];
 
 // Required field checks
-if (!$selectedStreetId || !$crime || !$address || !$date || !$time || !$description || !$witnessName || !$witnessAge || !$witnessSex) {
-    $errors[] = "Required fields missing.";
+$requiredFields = [
+    'Street ID' => $selectedStreetId,
+    'Crime' => $crime,
+    'Address' => $address,
+    'Date' => $date,
+    'Time' => $time,
+    'Description' => $description,
+    'Witness Name' => $witnessName,
+    'Witness Age' => $witnessAge,
+    'Witness Sex' => $witnessSex
+];
+
+foreach ($requiredFields as $fieldName => $fieldValue) {
+    if (!$fieldValue) {
+        $errors[] = "$fieldName is missing";
+    }
 }
 
 if (!empty($errors)) {
-    echo "Error: " . implode(', ', $errors);
+    echo "<script>alert('" . implode(', ', $errors) . "');</script>";
+    echo "<script>window.history.back();</script>";
     exit;
 }
 

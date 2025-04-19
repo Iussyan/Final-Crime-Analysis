@@ -1,5 +1,4 @@
 <?php
-header('Content-Type: application/json');
 include 'connection.php'; // adjust path as needed
 
 $query = "CALL getAllStreetsWithCrimeCount()";
