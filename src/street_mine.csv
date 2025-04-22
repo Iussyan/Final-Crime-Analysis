@@ -1,0 +1,4020 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.5 1bd436f1",
+  "osm3s": {
+    "timestamp_osm_base": "2025-04-16T12:07:05Z",
+    "timestamp_areas_base": "2025-02-06T02:17:44Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 23213805,
+  "tags": {
+    "highway": "residential",
+    "name": "West Los Angeles Street",
+    "old_name": "Sampaguita"
+  }
+},
+{
+  "type": "way",
+  "id": 23213808,
+  "tags": {
+    "highway": "residential",
+    "name": "Diligence Street"
+  }
+},
+{
+  "type": "way",
+  "id": 23213810,
+  "tags": {
+    "highway": "residential",
+    "name": "Charity Street"
+  }
+},
+{
+  "type": "way",
+  "id": 23213848,
+  "tags": {
+    "highway": "residential",
+    "name": "Industrious Street"
+  }
+},
+{
+  "type": "way",
+  "id": 23213851,
+  "tags": {
+    "highway": "residential",
+    "name": "Diligence Street"
+  }
+},
+{
+  "type": "way",
+  "id": 23213852,
+  "tags": {
+    "highway": "residential",
+    "name": "Efficiency Street",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 23213854,
+  "tags": {
+    "highway": "residential",
+    "name": "Goodwill Avenue"
+  }
+},
+{
+  "type": "way",
+  "id": 23213858,
+  "tags": {
+    "highway": "residential",
+    "name": "Faith Street",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 23213864,
+  "tags": {
+    "highway": "residential",
+    "name": "Love Street"
+  }
+},
+{
+  "type": "way",
+  "id": 23213865,
+  "tags": {
+    "highway": "residential",
+    "name": "Obedience Street"
+  }
+},
+{
+  "type": "way",
+  "id": 23213876,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Bougainvilla Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 23213891,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Talisay Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 23213909,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Begonia Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 23213929,
+  "tags": {
+    "highway": "unclassified",
+    "lit": "yes",
+    "name": "Holy Cross Road",
+    "sidewalk": "both",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 23213934,
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Pablo dela Cruz Street",
+    "oneway": "no",
+    "short_name": "P. dela Cruz Street",
+    "sidewalk": "no",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 23213938,
+  "tags": {
+    "highway": "residential",
+    "lanes": "1",
+    "name": "Rockville Avenue",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 23350359,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Talisay Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 23649454,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "4",
+    "name": "Bougainvilla Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 23649455,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Balete Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 23649456,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Bougainvilla Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 24053292,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Green Avenue",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053296,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Dizon Street",
+    "sidewalk": "no",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053297,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Onyx Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053302,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Mocking Bird Street",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 24053304,
+  "tags": {
+    "highway": "residential",
+    "name": "Rainbow Avenue",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053317,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Crystal Street",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 24053320,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Thaddeus Street",
+    "oneway": "no",
+    "short_name": "St. Thaddeus Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053326,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Yellow Bird Street",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 24053331,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Jude Street",
+    "short_name": "St. Jude Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053332,
+  "tags": {
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Carlos Street",
+    "oneway": "no",
+    "postal_code": "1116",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053342,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Pink Flamingo Street",
+    "oneway": "yes",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 24053356,
+  "tags": {
+    "highway": "residential",
+    "name": "Mahogany Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053358,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Peter Street",
+    "short_name": "St. Peter Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053363,
+  "tags": {
+    "highway": "residential",
+    "name": "Guijo Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053384,
+  "tags": {
+    "highway": "residential",
+    "name": "Kalinisan Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053400,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Amethyst Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053401,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Jade Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053404,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Philip Street",
+    "short_name": "St. Philip Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053405,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Lime Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053424,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Sapphire Street",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 24053439,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Thaddeus Street",
+    "oneway": "no",
+    "short_name": "St. Thaddeus Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053447,
+  "tags": {
+    "highway": "residential",
+    "name": "Aries Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053448,
+  "tags": {
+    "highway": "residential",
+    "name": "Gemini Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053451,
+  "tags": {
+    "highway": "residential",
+    "name": "Rainbow Avenue",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053457,
+  "tags": {
+    "highway": "residential",
+    "name": "Camia Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053475,
+  "tags": {
+    "highway": "residential",
+    "name": "Kamagong Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053476,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Green Peasant Street",
+    "oneway": "yes",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 24053479,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Topaz Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053482,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Anthony Street",
+    "short_name": "St. Anthony Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053483,
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "name": "Carlos Extension",
+    "sidewalk": "no",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053492,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Metro Avenue",
+    "postal_code": "1116",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053494,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "White Duck",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 24053500,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Red Macau Street",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 24053504,
+  "tags": {
+    "highway": "residential",
+    "name": "Taurus Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053519,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Andrew Street",
+    "short_name": "St. Andrew Stree",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053523,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Myrtle Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053532,
+  "tags": {
+    "highway": "residential",
+    "name": "Acacia Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053545,
+  "tags": {
+    "access": "private",
+    "fixme": "confirm street name, possible duplicate",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Prada Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053547,
+  "tags": {
+    "highway": "residential",
+    "name": "Taurus Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053550,
+  "tags": {
+    "highway": "residential",
+    "name": "Dahlia Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053553,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Mint Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053566,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Lime Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053574,
+  "tags": {
+    "highway": "residential",
+    "name": "Pilaring Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053594,
+  "tags": {
+    "highway": "residential",
+    "name": "Pisces Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 24053598,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Silver Gull Street",
+    "postal_code": "1116",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 24053600,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Simon Street",
+    "short_name": "St. Simon Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053615,
+  "tags": {
+    "highway": "residential",
+    "name": "Waling Waling Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053618,
+  "tags": {
+    "highway": "residential",
+    "name": "Rosal Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053621,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Saint James Street",
+    "short_name": "St. James Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053655,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "motorcar": "yes",
+    "name": "A. Ramirez Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053656,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Emerald Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 24053658,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Pink Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 24053659,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Rainbow Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053660,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Blue Street",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 24053661,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Ivory Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 24053664,
+  "tags": {
+    "highway": "residential",
+    "name": "Libra Street",
+    "not:name": "Star"
+  }
+},
+{
+  "type": "way",
+  "id": 24053666,
+  "tags": {
+    "highway": "residential",
+    "name": "Virgo Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053667,
+  "tags": {
+    "highway": "residential",
+    "name": "Leo Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053668,
+  "tags": {
+    "highway": "residential",
+    "name": "Taurus Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053669,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Diamond Avenue",
+    "sidewalk": "both",
+    "smoothness": "intermediate",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053670,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Amethyst Street",
+    "sidewalk": "no",
+    "smoothness": "intermediate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 24053671,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Jade Street",
+    "sidewalk": "no",
+    "smoothness": "very_bad",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 24053672,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Gamma Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053673,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Beta Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053674,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Omicron Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053675,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Topaz Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053676,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Zircon Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053677,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Saphire Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053678,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Ruby Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053680,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Acme Road",
+    "sidewalk": "no",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053682,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Emerald Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053683,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Silver Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053684,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Diamond Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053743,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "motorcar": "yes",
+    "name": "West Berkeley Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053744,
+  "tags": {
+    "designation": "barangay_road",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "20",
+    "name": "East Berkely Street",
+    "sidewalk": "both",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053745,
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "mapillary": "209402611088089",
+    "name": "Calugas Street",
+    "sidewalk": "both",
+    "source:name": "extrapolation",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053749,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Saint Peter Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053750,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Saint Andrew Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053751,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Saint John Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053752,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Saint Matthew Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053753,
+  "tags": {
+    "highway": "residential",
+    "name": "Saint Mark Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053754,
+  "tags": {
+    "highway": "residential",
+    "name": "Saint James Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053755,
+  "tags": {
+    "highway": "residential",
+    "name": "East Los Angeles Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053757,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "motorcar": "yes",
+    "name": "West San Francisco Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053759,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Quezon Street",
+    "source_ref": "https://osm.org/node/7891831389",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053760,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Osmeña Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053761,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "maxspeed": "20",
+    "name": "Marcos Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053762,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Garcia Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053763,
+  "tags": {
+    "alt_name": "East San Francisco Street",
+    "designation": "barangay_road",
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "20",
+    "name": "Magsaysay Avenue",
+    "sidewalk": "both",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053764,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "E. Aguinaldo Street",
+    "name:etymology": "Gen. Emilio Aguinaldo",
+    "name:etymology:wikidata": "Q188939",
+    "name:etymology:wikipedia": "en:Emilio Aguinaldo",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053766,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Santa Barbara Street",
+    "short_name": "Sta. Barbara Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053767,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "J. P. Rizal Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053769,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "A. Bonifacio Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053770,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Recto Street",
+    "source_ref": "https://osm.org/node/7891831591",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053771,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Quirino Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053773,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Ramirez Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053775,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Sikatuna Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053776,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Osmeña Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053778,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Benevolence Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053780,
+  "tags": {
+    "highway": "residential",
+    "name": "Garcia Street Extension"
+  }
+},
+{
+  "type": "way",
+  "id": 24053782,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "East Fresno Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053784,
+  "tags": {
+    "highway": "residential",
+    "name": "Charity Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053785,
+  "tags": {
+    "highway": "residential",
+    "name": "Amity Street"
+  }
+},
+{
+  "type": "way",
+  "id": 24053796,
+  "tags": {
+    "access": "private",
+    "highway": "service",
+    "lanes": "2",
+    "name": "Butalid Road",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053802,
+  "tags": {
+    "access": "private",
+    "highway": "service",
+    "lanes": "2",
+    "name": "Butalid Road",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 24053805,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Kappa Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 28296728,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint James Street",
+    "short_name": "St. James Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 28296729,
+  "tags": {
+    "highway": "tertiary",
+    "name": "Ester Street"
+  }
+},
+{
+  "type": "way",
+  "id": 28520462,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "motorcar": "yes",
+    "name": "West San Jose Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 28520465,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "P. Macapagal Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 28520477,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Recto Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 28520484,
+  "tags": {
+    "highway": "residential",
+    "name": "Riverside Street"
+  }
+},
+{
+  "type": "way",
+  "id": 28520504,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Madre Cacao Street"
+  }
+},
+{
+  "type": "way",
+  "id": 28520505,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Aratilis Street"
+  }
+},
+{
+  "type": "way",
+  "id": 28520506,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Narra Street"
+  }
+},
+{
+  "type": "way",
+  "id": 28599652,
+  "tags": {
+    "access": "private",
+    "alt_name": "Corazon Street",
+    "highway": "residential",
+    "name": "First Street"
+  }
+},
+{
+  "type": "way",
+  "id": 28599661,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Aguirre Compound"
+  }
+},
+{
+  "type": "way",
+  "id": 28599688,
+  "tags": {
+    "access": "private",
+    "alt_name": "Don Teodoro Street",
+    "highway": "residential",
+    "name": "Second Street"
+  }
+},
+{
+  "type": "way",
+  "id": 30412162,
+  "tags": {
+    "highway": "residential",
+    "name": "Bayani",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 33191947,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Champaca Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 41172150,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Moss Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 41172151,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Olive Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 41178515,
+  "tags": {
+    "highway": "residential",
+    "lanes": "1",
+    "name": "Rockville Avenue",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 41178516,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Rockville Avenue",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 41379197,
+  "tags": {
+    "highway": "residential",
+    "name": "Franciscan Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 41379251,
+  "tags": {
+    "highway": "residential",
+    "name": "Noguera Street"
+  }
+},
+{
+  "type": "way",
+  "id": 41802909,
+  "tags": {
+    "highway": "residential",
+    "name": "Luz Street"
+  }
+},
+{
+  "type": "way",
+  "id": 46990157,
+  "tags": {
+    "highway": "secondary",
+    "lane_markings": "no",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Katipunan Avenue",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 46990641,
+  "tags": {
+    "bridge": "yes",
+    "bridge:name": "Asian Bridge",
+    "destination:backward": "Novaliches",
+    "highway": "tertiary",
+    "lanes": "2",
+    "layer": "1",
+    "name": "Atlas Road",
+    "oneway": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 46990642,
+  "tags": {
+    "destination:backward": "Novaliches",
+    "highway": "tertiary",
+    "lanes": "1",
+    "name": "Atlas Road",
+    "oneway": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 91769156,
+  "tags": {
+    "designation": "barangay_road",
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Magsaysay Avenue",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 91769158,
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "name": "Villamor Street",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 91769160,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Oregon Street",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 91769161,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Magsaysay Extension",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 91771862,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "maxspeed": "20",
+    "name": "Marcos Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 91780717,
+  "tags": {
+    "highway": "residential",
+    "name": "Joy Street"
+  }
+},
+{
+  "type": "way",
+  "id": 91780751,
+  "tags": {
+    "highway": "residential",
+    "name": "Diligence Street"
+  }
+},
+{
+  "type": "way",
+  "id": 91780754,
+  "tags": {
+    "highway": "residential",
+    "name": "Honesty Street"
+  }
+},
+{
+  "type": "way",
+  "id": 92115285,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Emerald Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 92115292,
+  "tags": {
+    "access": "private",
+    "alt_name": "Corazon Street",
+    "highway": "residential",
+    "name": "First Street"
+  }
+},
+{
+  "type": "way",
+  "id": 118602643,
+  "tags": {
+    "alt_name": "East San Francisco Street",
+    "designation": "barangay_road",
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "20",
+    "name": "Magsaysay Avenue",
+    "sidewalk": "both",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 118602646,
+  "tags": {
+    "highway": "residential",
+    "name": "Justice Street"
+  }
+},
+{
+  "type": "way",
+  "id": 118602649,
+  "tags": {
+    "highway": "residential",
+    "name": "Purity Street",
+    "source": "extrapolation",
+    "source_ref": "https://osm.org/node/6986318988"
+  }
+},
+{
+  "type": "way",
+  "id": 120880944,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 134641790,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Topaz Street"
+  }
+},
+{
+  "type": "way",
+  "id": 134641794,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Rockville Avenue",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 134641796,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint John Street",
+    "oneway": "yes",
+    "short_name": "St. John Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 134641800,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Pearl Street",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 134641806,
+  "tags": {
+    "highway": "residential",
+    "name": "Santan Street"
+  }
+},
+{
+  "type": "way",
+  "id": 134641808,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Jade Street"
+  }
+},
+{
+  "type": "way",
+  "id": 134641809,
+  "tags": {
+    "highway": "residential",
+    "name": "Evangelista Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 134641811,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Gold Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 176156455,
+  "tags": {
+    "highway": "unclassified",
+    "lit": "yes",
+    "name": "Holy Cross Road",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 217822646,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "motorcar": "yes",
+    "name": "North Point Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 222731620,
+  "tags": {
+    "highway": "residential",
+    "name": "Golden Peacock Street",
+    "postal_code": "1116",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 222731625,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Blue Bird Street",
+    "postal_code": "1116",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 243497961,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Orange Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 245591357,
+  "tags": {
+    "access": "private",
+    "bridge": "yes",
+    "foot": "yes",
+    "highway": "residential",
+    "lanes": "2",
+    "layer": "1",
+    "name": "Gozum Street",
+    "note": "Elevation 50 meters",
+    "sidewalk": "both",
+    "surface": "concrete",
+    "width": "9"
+  }
+},
+{
+  "type": "way",
+  "id": 245591358,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Gozum Street",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 330473351,
+  "tags": {
+    "highway": "residential",
+    "name": "Luck Street"
+  }
+},
+{
+  "type": "way",
+  "id": 330473352,
+  "tags": {
+    "highway": "residential",
+    "name": "Generous Street",
+    "source": "extrapolation",
+    "source_ref": "https://osm.org/node/7915406592"
+  }
+},
+{
+  "type": "way",
+  "id": 393587021,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "motorcar": "no",
+    "name": "New Jersey Village"
+  }
+},
+{
+  "type": "way",
+  "id": 393587022,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Mulawin Street"
+  }
+},
+{
+  "type": "way",
+  "id": 393587023,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Mangga Street",
+    "not:name": "Aratelis Street"
+  }
+},
+{
+  "type": "way",
+  "id": 549654400,
+  "tags": {
+    "highway": "residential",
+    "name": "Kindness Avenue"
+  }
+},
+{
+  "type": "way",
+  "id": 549659581,
+  "tags": {
+    "highway": "residential",
+    "name": "Angela Avenue"
+  }
+},
+{
+  "type": "way",
+  "id": 549659604,
+  "tags": {
+    "highway": "residential",
+    "name": "Angela Avenue"
+  }
+},
+{
+  "type": "way",
+  "id": 549663756,
+  "tags": {
+    "highway": "residential",
+    "name": "Courage Street"
+  }
+},
+{
+  "type": "way",
+  "id": 549812770,
+  "tags": {
+    "highway": "residential",
+    "name": "Amity Street Extension"
+  }
+},
+{
+  "type": "way",
+  "id": 550853110,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Chanel Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853111,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Armani Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853113,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Burberry Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853116,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "DKNY Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853119,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Givenchy Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853122,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Mulberry Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853123,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "L. Vuitton Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853124,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Versace Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853126,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Hermes Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853127,
+  "tags": {
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "S. Francisco Street",
+    "postal_code": "1116",
+    "sidewalk": "no",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853128,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Quartz Street",
+    "source": "DigiGlobe"
+  }
+},
+{
+  "type": "way",
+  "id": 550853136,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Pearl Street",
+    "name:en": "Pearl Street",
+    "source": "DigiGlobe"
+  }
+},
+{
+  "type": "way",
+  "id": 550853137,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Diamond Avenue",
+    "source": "DigiGlobe",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 550853138,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Sapphire Street",
+    "source": "DigiGlobe"
+  }
+},
+{
+  "type": "way",
+  "id": 553767028,
+  "tags": {
+    "highway": "service",
+    "name": "Leo Street",
+    "service": "alley"
+  }
+},
+{
+  "type": "way",
+  "id": 553767029,
+  "tags": {
+    "highway": "residential",
+    "name": "Gemini Street"
+  }
+},
+{
+  "type": "way",
+  "id": 553774750,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Benevolence Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 553774757,
+  "tags": {
+    "highway": "residential",
+    "name": "Courage Street"
+  }
+},
+{
+  "type": "way",
+  "id": 553774763,
+  "tags": {
+    "highway": "residential",
+    "name": "Joy Street"
+  }
+},
+{
+  "type": "way",
+  "id": 553774797,
+  "tags": {
+    "highway": "residential",
+    "name": "San Jose Street"
+  }
+},
+{
+  "type": "way",
+  "id": 553793574,
+  "tags": {
+    "highway": "residential",
+    "name": "Davies Lane"
+  }
+},
+{
+  "type": "way",
+  "id": 553793575,
+  "tags": {
+    "highway": "residential",
+    "name": "Justice Street"
+  }
+},
+{
+  "type": "way",
+  "id": 553793579,
+  "tags": {
+    "highway": "residential",
+    "name": "Justice Street"
+  }
+},
+{
+  "type": "way",
+  "id": 553793582,
+  "tags": {
+    "highway": "residential",
+    "name": "Justice Street"
+  }
+},
+{
+  "type": "way",
+  "id": 553793716,
+  "tags": {
+    "highway": "residential",
+    "name": "Joy Street"
+  }
+},
+{
+  "type": "way",
+  "id": 553793735,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "West Fresno Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 553793742,
+  "tags": {
+    "highway": "residential",
+    "name": "Acme Road"
+  }
+},
+{
+  "type": "way",
+  "id": 557184132,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Bally Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 557184133,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Tomford Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 557184138,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Bvlgari Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 557184139,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Gucci Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 557184144,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Thomas Street",
+    "short_name": "St. Thomas Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 569378517,
+  "tags": {
+    "highway": "residential",
+    "name": "Yakal Street"
+  }
+},
+{
+  "type": "way",
+  "id": 569378519,
+  "tags": {
+    "highway": "residential",
+    "name": "Tanguile Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 569379962,
+  "tags": {
+    "highway": "residential",
+    "name": "Ester Street"
+  }
+},
+{
+  "type": "way",
+  "id": 569391820,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Sapphire Street"
+  }
+},
+{
+  "type": "way",
+  "id": 569413686,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Topaz Street"
+  }
+},
+{
+  "type": "way",
+  "id": 569414426,
+  "tags": {
+    "highway": "residential",
+    "name": "L. Figueroa Compound"
+  }
+},
+{
+  "type": "way",
+  "id": 591023856,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Green Avenue",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591023857,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Fern Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591024218,
+  "tags": {
+    "highway": "residential",
+    "name": "B. Evangelista Drive",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 591024219,
+  "tags": {
+    "alt_name": "Metro Green Village",
+    "highway": "residential",
+    "name": "B. Evangelista Drive",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 591214273,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Sugar Bird Street"
+  }
+},
+{
+  "type": "way",
+  "id": 591256891,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Ruby Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591257534,
+  "tags": {
+    "highway": "service",
+    "name": "F. Ibarra Street",
+    "service": "alley"
+  }
+},
+{
+  "type": "way",
+  "id": 591281701,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Quartz Street",
+    "source": "DigiGlobe"
+  }
+},
+{
+  "type": "way",
+  "id": 591281712,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "S. Francisco Street",
+    "postal_code": "1116",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591281713,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Peter Street",
+    "postal_code": "1116",
+    "short_name": "St. Peter Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591281716,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Diamond Avenue",
+    "source": "DigiGlobe",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591281722,
+  "tags": {
+    "access": "private",
+    "fixme": "confirm street name, possible duplicate",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Prada Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591282125,
+  "tags": {
+    "highway": "residential",
+    "name": "Rosal Street"
+  }
+},
+{
+  "type": "way",
+  "id": 591358633,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Bougainvilla Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 591361812,
+  "tags": {
+    "highway": "service",
+    "lanes": "2",
+    "name": "Tamarind Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591365898,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Ruby Street"
+  }
+},
+{
+  "type": "way",
+  "id": 591371412,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Jade Street",
+    "note": "Emerald or Jade Street ?",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 591371415,
+  "tags": {
+    "highway": "residential",
+    "name": "Libra Street",
+    "not:name": "Star"
+  }
+},
+{
+  "type": "way",
+  "id": 591374830,
+  "tags": {
+    "highway": "residential",
+    "name": "A. Ramirez Street"
+  }
+},
+{
+  "type": "way",
+  "id": 591482680,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Saint Matthew Street"
+  }
+},
+{
+  "type": "way",
+  "id": 591483174,
+  "tags": {
+    "highway": "residential",
+    "name": "Pablo dela Cruz Street",
+    "short_name": "P. dela Cruz Street"
+  }
+},
+{
+  "type": "way",
+  "id": 591629574,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Violet Street",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 591629576,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Green Street",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 615752343,
+  "tags": {
+    "highway": "residential",
+    "name": "Saint Joseph Street"
+  }
+},
+{
+  "type": "way",
+  "id": 616817932,
+  "tags": {
+    "highway": "residential",
+    "name": "Aratilis Street"
+  }
+},
+{
+  "type": "way",
+  "id": 616817933,
+  "tags": {
+    "highway": "residential",
+    "name": "Atlas Interior"
+  }
+},
+{
+  "type": "way",
+  "id": 694203182,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint James Street",
+    "short_name": "St. James Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 857069154,
+  "tags": {
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "S. Francisco Street",
+    "postal_code": "1116",
+    "sidewalk": "no",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 860900720,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Emerald Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 891082375,
+  "tags": {
+    "highway": "residential",
+    "name": "Jose P. Laurel Street"
+  }
+},
+{
+  "type": "way",
+  "id": 891086546,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Sampaguita Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 894168208,
+  "tags": {
+    "highway": "residential",
+    "name": "West San Francisco Street"
+  }
+},
+{
+  "type": "way",
+  "id": 894190615,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Arellano Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 894190616,
+  "tags": {
+    "highway": "residential",
+    "name": "Upper Garcia Extension"
+  }
+},
+{
+  "type": "way",
+  "id": 894329675,
+  "tags": {
+    "highway": "residential",
+    "lanes": "1",
+    "name": "Fremont Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 896456572,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Sikatuna Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 899751783,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Rockville Avenue",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 902666139,
+  "tags": {
+    "access": "private",
+    "highway": "service",
+    "name": "Gray Parrot Street",
+    "service": "pipestem"
+  }
+},
+{
+  "type": "way",
+  "id": 902666140,
+  "tags": {
+    "highway": "residential",
+    "name": "Taurus Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 902666142,
+  "tags": {
+    "highway": "residential",
+    "name": "Ramos Street"
+  }
+},
+{
+  "type": "way",
+  "id": 905228071,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "1",
+    "name": "Bougainvilla Street",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 905529267,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "1",
+    "name": "Bougainvilla Street",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 910684114,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Goodwill Avenue",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 910684115,
+  "tags": {
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Goodwill Avenue",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 924025504,
+  "tags": {
+    "highway": "residential",
+    "name": "Saint Joseph Street"
+  }
+},
+{
+  "type": "way",
+  "id": 930557426,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Opal Street",
+    "sidewalk": "no",
+    "smoothness": "intermediate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 938634914,
+  "tags": {
+    "alt_name": "San Dionisio",
+    "destination:forward": "Novaliches",
+    "destination:street": "General Luis",
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Atlas Road",
+    "oneway": "no",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 963839125,
+  "tags": {
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Katipunan Avenue",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 963839126,
+  "tags": {
+    "highway": "secondary",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Katipunan Avenue",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1008024763,
+  "tags": {
+    "highway": "residential",
+    "name": "Helpful Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1029310000,
+  "tags": {
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "B. Evangelista Drive",
+    "postal_code": "1116",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1058687147,
+  "tags": {
+    "access": "destination",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Assisi Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1058687152,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1058687153,
+  "tags": {
+    "bicycle": "yes",
+    "bus_bay": "left",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lane_markings": "yes",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "no",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1058687156,
+  "tags": {
+    "highway": "residential",
+    "lanes": "1",
+    "name": "Rockville Avenue",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1058687157,
+  "tags": {
+    "highway": "residential",
+    "lanes": "1",
+    "name": "Rockville Avenue",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1058687771,
+  "tags": {
+    "access": "permissive",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "motor_vehicle:conditional": "private @ Mo-Su 00:00-05:00",
+    "name": "Saint Michael Street",
+    "short_name": "St. Michael Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1059031390,
+  "tags": {
+    "highway": "tertiary",
+    "name": "Senading Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1059058001,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Kappa Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1059058002,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Bougainvilla Street",
+    "sidewalk": "both",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1059058003,
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Diamond Avenue",
+    "oneway": "no",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "concrete",
+    "smoothness": "intermediate",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1059667130,
+  "tags": {
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Goodwill Avenue",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1059669917,
+  "tags": {
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Goodwill Avenue",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1059932828,
+  "tags": {
+    "highway": "residential",
+    "name": "Santa Cruz Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1074465229,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Peter Street",
+    "postal_code": "1116",
+    "short_name": "St. Peter Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1098694106,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Lapu-lapu Street",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1098694107,
+  "tags": {
+    "alt_name": "East San Francisco Street",
+    "designation": "barangay_road",
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "20",
+    "name": "Magsaysay Avenue",
+    "sidewalk": "both",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1098697512,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Santa Maria Street",
+    "sidewalk": "no",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1098703453,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "motorcar": "yes",
+    "name": "North Point Street",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1098703461,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Acme Road",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1098708531,
+  "tags": {
+    "highway": "service",
+    "name": "Leo Street",
+    "service": "driveway"
+  }
+},
+{
+  "type": "way",
+  "id": 1098708532,
+  "tags": {
+    "alt_name": "ACF Road",
+    "highway": "residential",
+    "name": "Aries Street",
+    "not:name": "Star"
+  }
+},
+{
+  "type": "way",
+  "id": 1098709742,
+  "tags": {
+    "highway": "service",
+    "lanes": "1",
+    "name": "Butalid Road",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1100984569,
+  "tags": {
+    "highway": "residential",
+    "name": "Taurus Street",
+    "postal_code": "1116"
+  }
+},
+{
+  "type": "way",
+  "id": 1100987548,
+  "tags": {
+    "access": "private",
+    "highway": "service",
+    "name": "Black Quail Street",
+    "service": "pipestem"
+  }
+},
+{
+  "type": "way",
+  "id": 1103403921,
+  "tags": {
+    "highway": "residential",
+    "name": "Saint Joseph Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1104358323,
+  "tags": {
+    "highway": "residential",
+    "name": "Saint Joseph Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1104358324,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Pablo dela Cruz Street",
+    "short_name": "P. de la Cruz"
+  }
+},
+{
+  "type": "way",
+  "id": 1104359263,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Recto Street",
+    "source_ref": "https://osm.org/node/7891831591",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1115626056,
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "mapillary": "209402611088089",
+    "name": "Calugas Street",
+    "sidewalk": "both",
+    "source:name": "extrapolation",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1184323977,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint Thaddeus Street",
+    "oneway": "no",
+    "short_name": "St. Thaddeus Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1184323978,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "maxspeed": "10",
+    "name": "Saint John Street",
+    "short_name": "St. John Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1245810162,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Ivory Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1245810163,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Orange Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1247040903,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "maxspeed": "20",
+    "name": "Magsaysay Extension",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247040904,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "maxspeed": "20",
+    "name": "Marcos Street",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247054811,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Sikatuna Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247054812,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Sikatuna Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247054813,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Sikatuna Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247068250,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "4",
+    "name": "Bougainvilla Street",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1247068251,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "1",
+    "name": "Bougainvilla Street",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1247068252,
+  "tags": {
+    "highway": "service",
+    "lane_markings": "no",
+    "lanes": "1",
+    "name": "Bougainvilla Street",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1247083487,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Beta Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247254790,
+  "tags": {
+    "access": "private",
+    "highway": "service",
+    "lanes": "1",
+    "name": "Butalid Road",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247254791,
+  "tags": {
+    "access": "private",
+    "highway": "service",
+    "lanes": "2",
+    "name": "Butalid Road",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247254792,
+  "tags": {
+    "access": "private",
+    "highway": "service",
+    "lanes": "1",
+    "name": "Butalid Road",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1247254793,
+  "tags": {
+    "highway": "service",
+    "lanes": "1",
+    "name": "Butalid Road",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1253823882,
+  "tags": {
+    "access": "yes",
+    "access:conditional": "private @ Mo-Su 00:00-05:00",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "10",
+    "name": "Carlos Street",
+    "oneway": "no",
+    "postal_code": "1116",
+    "sidewalk": "both",
+    "source:maxspeed": "sign",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1253855202,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Jade Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1262014658,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Benevolence Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1262014659,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "lane_markings": "no",
+    "lanes": "2",
+    "name": "Benevolence Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1303221202,
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Pablo dela Cruz Street",
+    "oneway": "no",
+    "short_name": "P. dela Cruz Street",
+    "sidewalk": "both",
+    "smoothness": "intermediate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1303723561,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Kindness Avenue"
+  }
+},
+{
+  "type": "way",
+  "id": 1303723563,
+  "tags": {
+    "highway": "residential",
+    "name": "Efficiency Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1303723564,
+  "tags": {
+    "highway": "residential",
+    "name": "Faith Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1303739845,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Peter Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1303746987,
+  "tags": {
+    "highway": "residential",
+    "name": "Madre Cacao Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1303748958,
+  "tags": {
+    "highway": "residential",
+    "name": "Pablo dela Cruz Street",
+    "short_name": "P. de la Cruz"
+  }
+},
+{
+  "type": "way",
+  "id": 1303750795,
+  "tags": {
+    "highway": "residential",
+    "name": "Saint James Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1303752515,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "New Jersey Village"
+  }
+},
+{
+  "type": "way",
+  "id": 1303752516,
+  "tags": {
+    "highway": "residential",
+    "name": "New Jersey Village"
+  }
+},
+{
+  "type": "way",
+  "id": 1303758241,
+  "tags": {
+    "highway": "residential",
+    "motorcar": "yes",
+    "name": "North Point Street",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1303758242,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "motorcar": "yes",
+    "name": "North Point Street",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1303759998,
+  "tags": {
+    "highway": "residential",
+    "motorcar": "yes",
+    "name": "North Point Street",
+    "oneway": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1303765446,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "name": "Rainbow Street",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1303776663,
+  "tags": {
+    "alt_name": "Corazon Street",
+    "highway": "residential",
+    "name": "First Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1303948912,
+  "tags": {
+    "bridge": "yes",
+    "highway": "secondary",
+    "lane_markings": "no",
+    "lanes": "4",
+    "layer": "1",
+    "lit": "yes",
+    "name": "Katipunan Extension",
+    "sidewalk": "no",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1303948913,
+  "tags": {
+    "highway": "secondary",
+    "lane_markings": "no",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Katipunan Extension",
+    "sidewalk": "no",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1304698351,
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Pablo dela Cruz Street",
+    "oneway": "no",
+    "short_name": "P. dela Cruz Street",
+    "sidewalk": "both",
+    "smoothness": "intermediate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1304698352,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lane_markings": "yes",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "no",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1304698353,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lane_markings": "yes",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "no",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1304960969,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lane_markings": "yes",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "no",
+    "ref": "127",
+    "sidewalk:left": "separate",
+    "sidewalk:right": "yes",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1306199115,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Golden Peacock Street",
+    "oneway": "yes",
+    "postal_code": "1116",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 1306199116,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Golden Peacock Street",
+    "postal_code": "1116",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 1306224130,
+  "tags": {
+    "highway": "tertiary",
+    "name": "Belen Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1307294931,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "yes",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1307294932,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "yes",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1307294933,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1308024305,
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "name": "Diamond Avenue",
+    "oneway": "no",
+    "sidewalk": "both",
+    "sidewalk:both:surface": "concrete",
+    "smoothness": "intermediate",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1309879500,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "lanes": "2",
+    "name": "V. Bernardino Road",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1311380926,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Amethyst Street",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1311380927,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Sapphire Street"
+  }
+},
+{
+  "type": "way",
+  "id": 1311380928,
+  "tags": {
+    "access": "destination",
+    "highway": "residential",
+    "name": "Jade Street",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1349521929,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1349819041,
+  "tags": {
+    "access": "private",
+    "highway": "residential",
+    "name": "Blue Bird Street",
+    "oneway": "yes",
+    "postal_code": "1116",
+    "surface": "paved"
+  }
+},
+{
+  "type": "way",
+  "id": 1377595118,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lane_markings": "yes",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "no",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1377595119,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lane_markings": "yes",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "no",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+},
+{
+  "type": "way",
+  "id": 1377595120,
+  "tags": {
+    "bicycle": "yes",
+    "cycleway": "lane",
+    "cycleway:lane": "advisory",
+    "cycleway:separation:left": "single_line",
+    "highway": "primary",
+    "lane_markings": "yes",
+    "lanes": "4",
+    "lit": "yes",
+    "name": "Quirino Highway",
+    "nat_name": "Quirino Hi-way",
+    "old_name": "Manila-Del Monte-Garay Road",
+    "oneway": "no",
+    "ref": "127",
+    "sidewalk": "both",
+    "surface": "concrete"
+  }
+}
+
+  ]
+}

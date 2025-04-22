@@ -1,0 +1,229 @@
+let activeStreet = null; // track currently highlighted layer
+            let activeMultiLine = false;
+            const streetIndex = [];
+
+            const streetLayer = L.geoJSON(null, {
+                style: defaultStyle,
+                onEachFeature: function(feature, layer) {
+                    const props = feature.properties;
+                    const displayName = props.name + (props['@id'] ? ` (${props['@id']})` : '');
+
+                    if (props?.name || !props?.name) {
+                        if (!props?.name) {
+                            props.name = 'Unnamed Road / Street';
+                        }
+                        layer.bindPopup(() => `<div style="min-width:200px">
+                    <h4 style="margin-bottom:4px;">${props.name}</h4>
+                    <ul style="list-style:none; padding:0; margin:0; font-size: 0.9em;">
+                        ${props.highway ? `<li><strong>Type:</strong> ${props.highway}</li>` : ''}
+                        ${props.oneway ? `<li><strong>Oneway:</strong> ${props.oneway}</li>` : ''}
+                        ${props.old_name ? `<li><strong>Old Name:</strong> ${props.old_name}</li>` : ''}
+                        ${props["@id"] ? `<li><strong>ID:</strong> ${props["@id"]}</li>` : ''}
+                    </ul>
+                    </div>`);
+                        streetIndex.push({
+                            name: props.name,
+                            highway: props.highway,
+                            layer: layer
+                        });
+                    }
+
+                    // Hover effect
+                    layer.on('mouseover', () => {
+                        if (layer !== activeStreet) {
+                            layer.setStyle(mouseStyle);
+                        } 
+                    });
+
+                    layer.on('mouseout', () => {
+                        if (layer !== activeStreet) {
+                            if (activeStreet !== null) {
+                                layer.setStyle(dimmedStyle);
+                            } else if (activeMultiLine == true) {
+                                layer.setStyle(dimmedStyle);
+                            } else if (layer !== activeStreet) {
+                                layer.setStyle(defaultStyle);
+                            }
+                        }
+                    });
+
+                    // Click handler
+                    layer.on('click', e => {
+                        e.originalEvent.stopPropagation();
+                        streetLayer.eachLayer(layer => layer.setStyle(dimmedStyle));
+
+                        layer.setStyle(highlightStyle);
+                        map.fitBounds(layer.getBounds());
+                        layer.openPopup();
+                        activeStreet = layer;
+
+                        document.getElementById('street-info').textContent = `You clicked: ${props.name}`;
+                    });
+                }
+            }).addTo(map);
+
+            // Load the GeoJSON data for streets
+            fetch('san_bartolome_streets1.geojson')
+                .then(res => res.json())
+                .then(data => streetLayer.addData(data));
+
+            // Function to reset street styles
+            function resetStreetStyles() {
+                streetLayer.eachLayer(layer => layer.setStyle(defaultStyle));
+                activeMultiLine = false;
+                activeStreet = null;
+                document.getElementById('street-info').textContent = '';
+            }
+
+            // Reset everything when clicking outside a street
+            map.on('click', function() {
+                resetStreetStyles();
+            });
+
+            // Create a custom search control for streets
+            const streetSearchControl = L.control({
+                position: 'topleft'
+            });
+
+            streetSearchControl.onAdd = function() {
+                const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
+                container.style.width = '15vw';
+                container.style.background = 'white';
+                container.style.padding = '8px';
+                container.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+                container.innerHTML = `<input id="search-input" type="text" placeholder="Search street..." style="width: 140px; padding: 3px; font-size: 12px;">
+                <div id="autocomplete-list" style="background:white; border:1px solid #ccc; max-height:100px; overflow-y:auto; font-size:12px; display:none;"></div>
+                <select id="type-filter" style="margin-top:6px;width:25%;">
+                <option value="">All Types</option>
+                <option value="residential">Residential</option>
+                <option value="service">Service</option>
+                <option value="tertiary">Tertiary</option>
+                <option value="unclassified">Unclassified</option>
+                </select>
+                <button id="search-btn" style="margin-top:6px;width:140px;font-size:12px;">Search</button>
+                <div id="search-feedback" style="color:red;font-size:13px;margin-top:4px;"></div>`;
+
+                // Prevent map dragging when interacting with the control
+                L.DomEvent.disableClickPropagation(container);
+                return container;
+            };
+
+            streetSearchControl.addTo(map);
+
+            // Create a simple autocomplete function
+            const input = document.getElementById('search-input');
+            const list = document.getElementById('autocomplete-list');
+            const filter = document.getElementById('type-filter');
+
+            input.addEventListener('input', function() {
+                const value = this.value.trim().toLowerCase();
+                const selectedType = filter.value;
+                list.innerHTML = '';
+
+                if (!value) {
+                    list.style.display = 'none';
+                    return;
+                }
+
+                // Create a name-to-count map
+                const nameMap = {};
+                streetIndex.forEach(item => {
+                    const name = item.name.split(' (')[0].toLowerCase(); // Strip ID for grouping
+                    if (!nameMap[name]) nameMap[name] = 0;
+                    nameMap[name]++;
+                });
+
+                const suggestions = streetIndex.filter(item =>
+                    item.name.toLowerCase().includes(value) &&
+                    (selectedType === '' || item.highway === selectedType)
+                );
+
+                if (suggestions.length === 0) {
+                    list.style.display = 'none';
+                    return;
+                }
+
+                const added = new Set();
+                suggestions.forEach(suggestion => {
+                    const baseName = suggestion.name.split(' (')[0]; // Remove ID
+                    if (added.has(baseName)) return; // avoid showing the same name multiple times
+                    added.add(baseName);
+
+                    const count = nameMap[baseName.toLowerCase()];
+                    const displayName = count > 1 ? `${baseName} (+${count - 1} more)` : baseName;
+
+                    const option = document.createElement('div');
+                    option.textContent = displayName;
+                    option.style.cursor = 'pointer';
+                    option.style.padding = '4px';
+
+                    option.addEventListener('click', () => {
+                        input.value = baseName;
+                        list.style.display = 'none';
+                    });
+
+                    list.appendChild(option);
+                });
+
+                list.style.display = 'block';
+            });
+
+
+            function handleStreetSearch() {
+                const query = input.value.trim().toLowerCase();
+                const selectedType = filter.value;
+                const feedback = document.getElementById('search-feedback');
+
+                if (!query) {
+                    feedback.textContent = "Please enter a street name.";
+                    return;
+                }
+
+                // Find all matching items
+                const matchedItems = streetIndex.filter(item => {
+                    const nameMatch = item.name.toLowerCase().includes(query);
+                    const typeMatch = !selectedType || item.highway === selectedType;
+                    return nameMatch && typeMatch;
+                });
+
+                if (matchedItems.length > 0) {
+                    streetLayer.eachLayer(layer => layer.setStyle(dimmedStyle));
+                    activeStreet = null; // Reset active street
+
+                    const group = L.featureGroup();
+                    matchedItems.forEach(item => {
+                        item.layer.setStyle(highlightStyle);
+                        if (item.layer.bringToFront) item.layer.bringToFront();                        
+                        item.layer.openPopup(); // 👉 Open each popup
+                        group.addLayer(item.layer);
+                    });
+
+                    map.fitBounds(group.getBounds().pad(0.2)); // Slightly pad for visual breathing room
+
+                    activeMultiLine = true;
+                    activeStreet = group; // Set active street to the group of matched items
+                    const props = matchedItems[0].layer.feature.properties;
+
+                    document.getElementById('street-info').innerHTML = `
+            <h4>${props.name}</h4>
+            <p>Showing ${matchedItems.length} matching segments.</p>
+            <p><strong>Type:</strong> ${props.highway || 'N/A'}</p>
+            ${props.oneway ? `<p><strong>Oneway:</strong> ${props.oneway}</p>` : ''}
+            ${props.old_name ? `<p><strong>Old Name:</strong> ${props.old_name}</p>` : ''}
+            <p><strong>ID:</strong> ${props['@id'] || 'N/A'}</p>
+        `;
+                    feedback.textContent = `${matchedItems.length} street(s) found!`;
+                } else {
+                    feedback.textContent = "Street not found.";
+                    resetStreetStyles();
+                }
+            }
+
+
+            // Add event listener for the search button
+            document.addEventListener('DOMContentLoaded', () => {
+                document.getElementById('search-btn').addEventListener('click', handleStreetSearch);
+                document.getElementById('search-input').addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') handleStreetSearch();
+                });
+            });
