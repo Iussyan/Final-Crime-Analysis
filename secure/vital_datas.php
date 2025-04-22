@@ -171,5 +171,5 @@ if ($conn->multi_query("CALL getCrimeByDayOfWeek();")) {
     }
 }
 
-header("Location: ../temp/dashboard.php");
+header("Location: ../process/dashboard.php");
 exit();

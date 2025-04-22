@@ -77,7 +77,7 @@ if ($insertIncident->affected_rows > 0) {
 
     if ($insertCrime->affected_rows > 0) {
         $_SESSION['Success'] = true;
-        header("Location: ../temp/crime_reporting.php");
+        header("Location: ../process/crime_reporting.php");
         exit;
     } else {
         echo "Failed to insert into crime_data.";

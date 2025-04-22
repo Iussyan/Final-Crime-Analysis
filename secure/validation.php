@@ -41,11 +41,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['login'])) {
     }
     // If we reach here, login failed
     $_SESSION["loginFailed"] = true;
-    header("Location: ../temp/login.php");
+    header("Location: ../process/login.php");
     exit();
 } else {
     // Invalid request method or missing login
     $_SESSION["loginFailed"] = true;
-    header("Location: ../temp/login.php");
+    header("Location: ../process/login.php");
     exit();
 }
