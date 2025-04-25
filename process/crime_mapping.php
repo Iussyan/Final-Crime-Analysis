@@ -498,8 +498,12 @@ unset($_SESSION['loginSuccess']);
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Crime Mapping</h5>
-                                            <p class="m-b-0">Easily view crime hotspots and heatmaps across the barangay</p>
+                                            <h4 class="display-4 font-weight-bold mb-2">
+                                                Crime Mapping
+                                            </h4>
+                                            <p class="lead mb-0">
+                                                Easily view crime hotspots and heatmaps across the barangay
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">

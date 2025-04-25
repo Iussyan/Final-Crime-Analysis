@@ -424,8 +424,12 @@ unset($_SESSION['loginSuccess']);
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Crime Reporting</h5>
-                                            <p class="m-b-0">Report crime across the barangay by selecting a location and filling out the form</p>
+                                            <h4 class="display-4 font-weight-bold mb-2">
+                                                Crime Reporting
+                                            </h4>
+                                            <p class="lead mb-0">
+                                                Report crime across the barangay by selecting a location and filling out the form
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">

@@ -454,8 +454,12 @@ while ($row = $result->fetch_assoc()) {
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Crime Analysis</h5>
-                                            <p class="m-b-0">Graphical summaries of crime data</p>
+                                            <h4 class="display-4 font-weight-bold mb-2">
+                                                Crime Analysis
+                                            </h4>
+                                            <p class="lead mb-0">
+                                                Graphical summaries of crime data
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">

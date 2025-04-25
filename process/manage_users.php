@@ -424,8 +424,12 @@ unset($_SESSION['loginSuccess']);
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">User Management</h5>
-                                            <p class="m-b-0">Manage user accounts and roles in the system.</p>
+                                            <h4 class="display-4 font-weight-bold mb-2">
+                                                User Management
+                                            </h4>
+                                            <p class="lead mb-0">
+                                                Manage user accounts and roles in the system.
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
