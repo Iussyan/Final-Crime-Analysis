@@ -75,7 +75,7 @@ unset($_SESSION['loginSuccess']);
     <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
     <!-- Style.css -->
     <link rel="stylesheet" href="../secure/apis/leaflet/leaflet.css" crossorigin="" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=1.2">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Notyf.css -->
@@ -107,10 +107,57 @@ unset($_SESSION['loginSuccess']);
         .fixed-button {
             display: none !important;
         }
+
+        .page-header {
+            background-image: url("../src/images/sb-bg.jpg");
+            background-size: cover;
+            position: relative;
+            border-radius: 0;
+            color: #fff;
+        }
+
+        .page-header:before {
+            content: "";
+            color:rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .page-header .page-block {
+            padding: 35px 40px;
+        }
+
+        .page-header .page-block .breadcrumb-title {
+            float: right;
+        }
+
+        .page-header .page-block .breadcrumb-title a {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .page-header .page-block .breadcrumb-title .breadcrumb-item+.breadcrumb-item::before {
+            content: "\f105";
+            font-family: FontAwesome;
+            padding-right: 5px;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .page-header .page-block .breadcrumb-title {
+                float: left;
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body themebg-pattern="theme3">
     <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="loader-track">
@@ -165,7 +212,7 @@ unset($_SESSION['loginSuccess']);
         </div>
     </div>
     <!-- Pre-loader end -->
-    <div id="pcoded" class="pcoded">
+    <div id="pcoded" class="pcoded" fream-type="theme3">
         <div class="pcoded-overlay-box"></div>
         <div class="pcoded-container navbar-wrapper">
             <nav class="navbar header-navbar pcoded-header" style="background-color: white;">
@@ -265,7 +312,7 @@ unset($_SESSION['loginSuccess']);
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                                 <i class="bi bi-x-circle mr-1"></i> Close
                             </button>
-                            <button type="button" class="btn btn-primary" onclick="window.location.href='edit-profile.php'">
+                            <button type="button" class="btn btn-primary" onclick="window.location.href='manage_users.php'">
                                 <i class="bi bi-pencil-square mr-1"></i> Edit Profile
                             </button>
                         </div>
@@ -275,7 +322,7 @@ unset($_SESSION['loginSuccess']);
             <!-- Main Container -->
             <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
-                    <nav class="pcoded-navbar">
+                    <nav class="pcoded-navbar" navbar-theme="theme1">
                         <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                         <div class="pcoded-inner-navbar main-menu">
                             <div class="">
@@ -371,8 +418,12 @@ unset($_SESSION['loginSuccess']);
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Dashboard</h5>
-                                            <p class="m-b-0">Welcome to Crime Hotspot Analysis Reporting and Mapping System!</p>
+                                            <h4 class="display-4 font-weight-bold mb-2">
+                                                Dashboard
+                                            </h4>
+                                            <p class="lead mb-0">
+                                                Welcome to Crime Hotspot Analysis Reporting and Mapping System!
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -571,7 +622,6 @@ unset($_SESSION['loginSuccess']);
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="modal fade" id="crimeByDayModal" tabindex="-1" aria-labelledby="crimeByDayModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -793,8 +843,6 @@ unset($_SESSION['loginSuccess']);
             </div>
         </div>
     </div>
-    </div>
-
 
     <!-- Warning Section Starts -->
     <!-- Older IE warning message -->
@@ -854,18 +902,18 @@ unset($_SESSION['loginSuccess']);
     <!-- modernizr js -->
     <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
-    <script src="assets/js/pcoded.min.js"></script>
-    <script src="assets/js/vertical-layout.min.js "></script>
+    <script src="assets/js/pcoded.min.js?v=2"></script>
+    <script src="assets/js/vertical-layout.min.js?v=2"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <!-- Custom js -->
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/script.js?v=2"></script>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../secure/apis/leaflet/leaflet.js" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
     <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
     <script src="../javascript/crime_data/map.js?v=2"></script>
-    <script src="../javascript/crime_data/map-controls.js?v=2"></script>    
+    <script src="../javascript/crime_data/map-controls.js?v=2"></script>
     <script src="../javascript/crime_data/dashboard-street-layer.js?v=2"></script>
     <script src="../javascript/heatmap-layer.js?v=2"></script>
 </body>

@@ -1,9 +1,3 @@
-<?php
-session_start();
-include "../secure/connection.php";
-$loginFailed = isset($_SESSION['loginFailed']) && $_SESSION['loginFailed'];
-unset($_SESSION['loginFailed']);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,10 +8,6 @@ unset($_SESSION['loginFailed']);
 </head>
 
 <body>
-    <?php if ($loginFailed): ?>
-        <div class="alert alert-danger" data-type="danger" data-from="top" data-align="center">Login credentials are incorrect. Try again.</div>
-    <?php endif; ?>
-
     <div>
         <h1>Crime Analysis</h1>
         <form method="POST" action="../secure/validation.php">

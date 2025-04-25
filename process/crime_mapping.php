@@ -108,6 +108,53 @@ unset($_SESSION['loginSuccess']);
         .fixed-button {
             display: none !important;
         }
+
+        .page-header {
+            background-image: url("../src/images/sb-bg.jpg");
+            background-size: cover;
+            position: relative;
+            border-radius: 0;
+            color: #fff;
+        }
+
+        .page-header:before {
+            content: "";
+            color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .page-header .page-block {
+            padding: 35px 40px;
+        }
+
+        .page-header .page-block .breadcrumb-title {
+            float: right;
+        }
+
+        .page-header .page-block .breadcrumb-title a {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .page-header .page-block .breadcrumb-title .breadcrumb-item+.breadcrumb-item::before {
+            content: "\f105";
+            font-family: FontAwesome;
+            padding-right: 5px;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .page-header .page-block .breadcrumb-title {
+                float: left;
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -266,7 +313,7 @@ unset($_SESSION['loginSuccess']);
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                                 <i class="bi bi-x-circle mr-1"></i> Close
                             </button>
-                            <button type="button" class="btn btn-primary" onclick="window.location.href='edit-profile.php'">
+                            <button type="button" class="btn btn-primary" onclick="window.location.href='manage_users.php'">
                                 <i class="bi bi-pencil-square mr-1"></i> Edit Profile
                             </button>
                         </div>
