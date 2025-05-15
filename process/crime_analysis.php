@@ -19,28 +19,6 @@ $email = $_SESSION['email'];
 $contact = $_SESSION['contact'];
 $username = $_SESSION['username'];
 
-$recentIncidents = $_SESSION['recentIncidents'] ?? [];
-$totalIncidents = $_SESSION['totalIncidents'] ?? 0;
-
-$totalReports = $_SESSION['totalReports'] ?? [];
-$totalCrimes = $_SESSION['totalCrimes'] ?? 0;
-
-$mostCommonCategory = $_SESSION['mostCommonCategory'] ?? '';
-$totalReport = $_SESSION['totalReport'] ?? 0;
-
-$mostAffectedStreet = $_SESSION['Most Affected Street'] ?? '';
-$totalCrime = $_SESSION['Total Crime'] ?? 0;
-
-$streetsTotal = $_SESSION['streetsTotal'] ?? [];
-
-$peakDay = $_SESSION['peakDay'] ?? '';
-$peakDayCrimes = $_SESSION['peakDayCrimes'] ?? 0;
-
-$dayCrimeStats = $_SESSION['dayCrimeStats'] ?? [];
-
-$peakHour = $_SESSION['peakHour'] ?? '';
-$peakHourCrimes = $_SESSION['peakHourCrimes'] ?? 0;
-
 unset($_SESSION['loginSuccess']);
 ?>
 
@@ -428,7 +406,7 @@ while ($row = $result->fetch_assoc()) {
                                 </li>
                             </ul>
 
-                            <!-- <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Other Utilities</div>
+                            <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Other Utilities</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class=" ">
                                     <a href="user_manual.php" class="waves-effect waves-dark">
@@ -444,7 +422,7 @@ while ($row = $result->fetch_assoc()) {
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                            </ul> -->
+                            </ul>
                         </div>
                     </nav>
                     <div class="pcoded-content">
@@ -485,8 +463,12 @@ while ($row = $result->fetch_assoc()) {
                                             <!-- Row start -->
                                             <div class="row">
                                                 <!-- Multiple Open Accordion start -->
-                                                <div class="col-lg-6 mb-8">
-                                                    <div class="card shadow-sm border-0 transition-hover rounded-4">
+                                                <div class="col-lg-6 mb-4">
+                                                    <div
+                                                        class="card shadow-sm border-0 transition-hover rounded-4"
+                                                        style="cursor: pointer;"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#monthModal">
                                                         <div class="card-header text-white rounded-top-4">
                                                             <h5 class="mb-0">Crime Growth per Month</h5>
                                                         </div>
@@ -495,144 +477,151 @@ while ($row = $result->fetch_assoc()) {
                                                         </div>
                                                     </div>
                                                 </div>
+
                                                 <div class="col-lg-6 mb-4">
-                                                    <div class="card shadow-sm border-0 transition-hover rounded-4">
+                                                    <div
+                                                        class="card shadow-sm border-0 transition-hover rounded-4"
+                                                        style="cursor: pointer;"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#typeModal">
                                                         <div class="card-header text-white rounded-top-4">
                                                             <h5 class="mb-0">Crime Type Breakdown</h5>
                                                         </div>
                                                         <div class="card-body d-flex justify-content-center align-items-center" style="height: 350px;">
-                                                            <canvas id="crimeTypeBreakdownChart" style="max-height: 300px;"></canvas>
+                                                            <canvas id="crimeTypeBreakdownChart"></canvas>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <script>
-                                                    const crimeTypeData = <?php echo json_encode($crimeTypeData); ?>;
-                                                    const typeLabels = crimeTypeData.map(item => item.crimeType);
-                                                    const typeValues = crimeTypeData.map(item => item.total);
+                                                    // 2) Fetch JSON from data endpoint
+                                                    fetch('../secure/crime_analysis_data.php')
+                                                        .then(r => {
+                                                            if (!r.ok) throw new Error('Auth error');
+                                                            return r.json();
+                                                        })
+                                                        .then(payload => {
+                                                            const monthly = payload.monthly;
+                                                            const crimeType = payload.crimeType;
 
-                                                    const typeColors = [
-                                                        '#e74c3c', '#3498db', '#2ecc71', '#f1c40f', '#9b59b6',
-                                                        '#1abc9c', '#e67e22', '#34495e', '#95a5a6', '#d35400'
-                                                    ];
+                                                            // Prepare arrays
+                                                            const months = monthly.map(o => o.month);
+                                                            const totals = monthly.map(o => o.total);
 
-                                                    const ctxType = document.getElementById('crimeTypeBreakdownChart').getContext('2d');
-                                                    new Chart(ctxType, {
-                                                        type: 'doughnut',
-                                                        data: {
-                                                            labels: typeLabels,
-                                                            datasets: [{
-                                                                data: typeValues,
-                                                                backgroundColor: typeColors,
-                                                                borderColor: '#fff',
-                                                                borderWidth: 2
-                                                            }]
-                                                        },
-                                                        options: {
-                                                            responsive: true,
-                                                            maintainAspectRatio: false,
-                                                            plugins: {
-                                                                legend: {
-                                                                    position: 'right',
-                                                                    labels: {
-                                                                        color: '#333',
-                                                                        font: {
-                                                                            size: 12,
-                                                                            weight: 'bold'
-                                                                        }
-                                                                    }
+                                                            const types = crimeType.map(o => o.crimeType);
+                                                            const counts = crimeType.map(o => o.total);
+
+                                                            // 3) Init Chart.js charts
+                                                            const ctx1 = document.getElementById('crimesByMonthChart').getContext('2d');
+                                                            new Chart(ctx1, {
+                                                                type: 'bar',
+                                                                data: {
+                                                                    labels: months,
+                                                                    datasets: [{
+                                                                        label: 'Total Crimes',
+                                                                        data: totals
+                                                                    }]
                                                                 },
-                                                                tooltip: {
-                                                                    backgroundColor: '#ecf0f1',
-                                                                    titleColor: '#000',
-                                                                    bodyColor: '#000'
+                                                                options: {
+                                                                    responsive: true,
+                                                                    maintainAspectRatio: false
                                                                 }
-                                                            }
-                                                        }
-                                                    });
+                                                            });
+
+                                                            const ctx2 = document.getElementById('crimeTypeBreakdownChart').getContext('2d');
+                                                            new Chart(ctx2, {
+                                                                type: 'doughnut',
+                                                                data: {
+                                                                    labels: types,
+                                                                    datasets: [{
+                                                                        data: counts
+                                                                    }]
+                                                                },
+                                                                options: {
+                                                                    responsive: true,
+                                                                    maintainAspectRatio: false
+                                                                }
+                                                            });
+                                                        })
+                                                        .catch(console.error);
                                                 </script>
 
-                                                <script>
-                                                    const chartData = <?php echo json_encode($data); ?>;
-                                                    const labels = chartData.map(item => item.month);
-                                                    const values = chartData.map(item => item.total);
+                                                <!-- MONTHLY CHART MODAL -->
+                                                <div class="modal fade" id="monthModal" tabindex="-1" aria-labelledby="monthModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                                                        <div class="modal-content shadow-lg rounded-4">
+                                                            <div class="modal-header bg-primary text-white border-0 rounded-top-4">
+                                                                <h5 class="modal-title" id="monthModalLabel">
+                                                                    <i class="fa fa-bar-chart me-2"></i>
+                                                                    Crime Growth per Month
+                                                                </h5>
+                                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                            </div>
+                                                            <div class="modal-body p-4" id="monthModalBody">
+                                                                <p class="text-muted mb-3" id="monthModalDesc">
+                                                                    This bar chart shows the total number of reported crimes each month. Hover or tap a bar for details.
+                                                                </p>
+                                                                <div style="height: 70vh;" id="monthChartContainer">
+                                                                    <canvas id="crimesByMonthChartModal"></canvas>
+                                                                </div>
+                                                                <p class="mt-3 text-secondary" id="monthModalSummary">
+                                                                    <strong>Summary:</strong> Over the past year, crime peaked in July and dipped in February, indicating a mid‑summer surge.
+                                                                </p>
+                                                            </div>
+                                                            <div class="modal-footer border-0">
+                                                                <!-- Export PDF button -->
+                                                                <button id="exportMonthPdfBtn" type="button" class="btn btn-primary">
+                                                                    <i class="fa fa-file-pdf-o me-1"></i> Export PDF
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                                                    <i class="fa fa-times me-1"></i> Close
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                                    const ctx = document.getElementById('crimesByMonthChart').getContext('2d');
-                                                    new Chart(ctx, {
-                                                        type: 'bar',
-                                                        data: {
-                                                            labels: labels,
-                                                            datasets: [{
-                                                                label: 'Number of Crimes',
-                                                                data: values,
-                                                                backgroundColor: 'rgba(231, 76, 60, 0.7)',
-                                                                borderColor: 'rgba(192, 57, 43, 1)',
-                                                                borderWidth: 1,
-                                                                borderRadius: 5,
-                                                                barPercentage: 0.7,
-                                                                categoryPercentage: 0.6,
-                                                            }]
-                                                        },
-                                                        options: {
-                                                            responsive: true,
-                                                            maintainAspectRatio: false,
-                                                            plugins: {
-                                                                legend: {
-                                                                    display: true,
-                                                                    position: 'bottom',
-                                                                    labels: {
-                                                                        color: '#333',
-                                                                        font: {
-                                                                            size: 12,
-                                                                            weight: 'bold'
-                                                                        }
-                                                                    }
-                                                                },
-                                                                tooltip: {
-                                                                    backgroundColor: '#f1c40f',
-                                                                    titleColor: '#000',
-                                                                    bodyColor: '#000'
-                                                                }
-                                                            },
-                                                            scales: {
-                                                                x: {
-                                                                    title: {
-                                                                        display: true,
-                                                                        text: 'Month',
-                                                                        color: '#2c3e50',
-                                                                        font: {
-                                                                            weight: 'bold'
-                                                                        }
-                                                                    },
-                                                                    ticks: {
-                                                                        color: '#2c3e50'
-                                                                    },
-                                                                    grid: {
-                                                                        display: false
-                                                                    }
-                                                                },
-                                                                y: {
-                                                                    beginAtZero: true,
-                                                                    title: {
-                                                                        display: true,
-                                                                        text: 'Number of Crimes',
-                                                                        color: '#2c3e50',
-                                                                        font: {
-                                                                            weight: 'bold'
-                                                                        }
-                                                                    },
-                                                                    ticks: {
-                                                                        color: '#2c3e50',
-                                                                        stepSize: 1
-                                                                    },
-                                                                    grid: {
-                                                                        color: '#ecf0f1'
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    });
-                                                </script>
+                                                <!-- TYPE BREAKDOWN MODAL -->
+                                                <div class="modal fade" id="typeModal" tabindex="-1" aria-labelledby="typeModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                        <div class="modal-content shadow-lg rounded-4">
+                                                            <div class="modal-header bg-success text-white border-0 rounded-top-4">
+                                                                <h5 class="modal-title" id="typeModalLabel">
+                                                                    <i class="fa fa-pie-chart me-2"></i>
+                                                                    Crime Type Breakdown
+                                                                </h5>
+                                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                            </div>
+
+                                                            <!-- ⚠️ FIX: position-relative & overflow hidden -->
+                                                            <div class="modal-body p-4 position-relative" id="typeModalBody" style="overflow: hidden;">
+                                                                <p class="text-muted mb-3" id="typeModalDesc">
+                                                                    Distribution of crime reports by category over the selected time period.
+                                                                </p>
+
+                                                                <!-- ⚠️ FIX: pointer-events auto to ensure canvas doesn't block -->
+                                                                <div class="ratio ratio-4x3" id="typeChartContainer" style="max-height: 60vh; position: relative; pointer-events: auto;">
+                                                                    <canvas id="crimeTypeBreakdownChartModal" style="pointer-events: none;"></canvas>
+                                                                </div>
+
+                                                                <p class="mt-3 text-secondary" id="typeModalSummary">
+                                                                    <strong>Summary:</strong> Theft accounts for nearly 40% of incidents, followed by vandalism and assault.
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="modal-footer border-0">
+                                                                <!-- Export PDF button -->
+                                                                <button id="exportTypePdfBtn" type="button" class="btn btn-success">
+                                                                    <i class="fa fa-file-pdf-o me-1"></i> Export PDF
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                                                    <i class="fa fa-times me-1"></i> Close
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                                 <!-- Color Open Accordion start -->
                                                 <!-- HTML File -->
                                                 <div class="col-lg-12">
@@ -643,8 +632,10 @@ while ($row = $result->fetch_assoc()) {
                                                         <div class="card-block">
                                                             <!-- Crime Frequency per Street -->
                                                             <div class="row">
+                                                                <!-- Crime Frequency per Street -->
                                                                 <div class="col-lg-4 mb-4">
-                                                                    <div class="card shadow-sm border-0 transition-hover bg-c-lite-green rounded-4">
+                                                                    <div class="card shadow-sm border-0 transition-hover bg-c-lite-green rounded-4"
+                                                                        role="button" data-bs-toggle="modal" data-bs-target="#streetModal">
                                                                         <div class="card-header text-white rounded-top-4">
                                                                             <h5 class="mb-0">Crime Frequency per Street</h5>
                                                                         </div>
@@ -652,12 +643,12 @@ while ($row = $result->fetch_assoc()) {
                                                                             <canvas id="crimesByStreetChart"></canvas>
                                                                         </div>
                                                                     </div>
-                                                                    <button class="btn btn-outline-danger mb-3" onclick="exportAllChartsToPDF()">Export All Charts to PDF</button>
                                                                 </div>
 
                                                                 <!-- Crime Type Distribution -->
                                                                 <div class="col-lg-4 mb-4">
-                                                                    <div class="card shadow-sm border-0 transition-hover bg-c-lite-green rounded-4">
+                                                                    <div class="card shadow-sm border-0 transition-hover bg-c-lite-green rounded-4"
+                                                                        role="button" data-bs-toggle="modal" data-bs-target="#typeModal">
                                                                         <div class="card-header text-white rounded-top-4">
                                                                             <h5 class="mb-0">Crime Type Distribution</h5>
                                                                         </div>
@@ -667,29 +658,144 @@ while ($row = $result->fetch_assoc()) {
                                                                     </div>
                                                                 </div>
 
-                                                                <!-- Witness Age Distribution -->
+                                                                <!-- Victim Age Distribution -->
                                                                 <div class="col-lg-4 mb-4">
-                                                                    <div class="card shadow-sm border-0 transition-hover bg-c-lite-green rounded-4">
+                                                                    <div class="card shadow-sm border-0 transition-hover bg-c-lite-green rounded-4"
+                                                                        role="button" data-bs-toggle="modal" data-bs-target="#ageModal">
                                                                         <div class="card-header text-white rounded-top-4">
-                                                                            <h5 class="mb-0">Witness Age Distribution</h5>
+                                                                            <h5 class="mb-0">Victim Age Distribution</h5>
                                                                         </div>
                                                                         <div class="card-body" style="height: 350px;">
                                                                             <canvas id="witnessAgeDistributionChart"></canvas>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+
+                                                                <!-- CRIME FREQUENCY PER STREET MODAL -->
+                                                                <div class="modal fade" id="streetModal" tabindex="-1" aria-labelledby="streetModalLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                                        <div class="modal-content shadow-lg rounded-4">
+                                                                            <div class="modal-header bg-danger text-white border-0 rounded-top-4">
+                                                                                <h5 class="modal-title" id="streetModalLabel">
+                                                                                    <i class="fa fa-line-chart me-2"></i>
+                                                                                    Crime Frequency by Street
+                                                                                </h5>
+                                                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                                            </div>
+
+                                                                            <div class="modal-body p-4 position-relative" id="streetModalBody" style="overflow: hidden;">
+                                                                                <p class="text-muted mb-3" id="streetModalDesc">
+                                                                                    This chart shows the number of crime reports recorded on different streets.
+                                                                                </p>
+
+                                                                                <div class="ratio ratio-4x3" id="streetChartContainer" style="max-height: 60vh; position: relative; pointer-events: auto;">
+                                                                                    <canvas id="crimesByStreetChartModal" style="pointer-events: none;"></canvas>
+                                                                                </div>
+
+                                                                                <p class="mt-3 text-secondary" id="streetModalSummary">
+                                                                                    <strong>Summary:</strong> Some streets show a noticeably higher concentration of incidents, indicating potential hotspots.
+                                                                                </p>
+                                                                            </div>
+
+                                                                            <div class="modal-footer border-0">
+                                                                                <!-- Export PDF button -->
+                                                                                <button id="exportStreetPdfBtn" type="button" class="btn btn-danger">
+                                                                                    <i class="fa fa-file-pdf-o me-1"></i> Export PDF
+                                                                                </button>
+                                                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                                                                    <i class="fa fa-times me-1"></i> Close
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- CRIME TYPE DISTRIBUTION MODAL -->
+                                                                <div class="modal fade" id="typeModal" tabindex="-1" aria-labelledby="typeModalLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                                        <div class="modal-content shadow-lg rounded-4">
+                                                                            <div class="modal-header bg-success text-white border-0 rounded-top-4">
+                                                                                <h5 class="modal-title" id="typeModalLabel">
+                                                                                    <i class="fa fa-pie-chart me-2"></i>
+                                                                                    Crime Type Breakdown
+                                                                                </h5>
+                                                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                                            </div>
+
+                                                                            <div class="modal-body p-4 position-relative" style="overflow: hidden;">
+                                                                                <p class="text-muted mb-3">
+                                                                                    Distribution of reported crimes by category across the recorded timeframe.
+                                                                                </p>
+
+                                                                                <div class="ratio ratio-4x3" style="max-height: 60vh; position: relative; pointer-events: auto;">
+                                                                                    <canvas id="crimeTypeBreakdownChartModal" style="pointer-events: none;"></canvas>
+                                                                                </div>
+
+                                                                                <p class="mt-3 text-secondary">
+                                                                                    <strong>Summary:</strong> This breakdown highlights which categories of crime are most prevalent in the dataset.
+                                                                                </p>
+                                                                            </div>
+
+                                                                            <div class="modal-footer border-0">
+                                                                                <button id="exportTypePdfBtn" type="button" class="btn btn-success">
+                                                                                    <i class="fa fa-file-pdf-o me-1"></i> Export PDF
+                                                                                </button>
+                                                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                                                                    <i class="fa fa-times me-1"></i> Close
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- VICTIM AGE DISTRIBUTION MODAL -->
+                                                                <div class="modal fade" id="ageModal" tabindex="-1" aria-labelledby="ageModalLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                                        <div class="modal-content shadow-lg rounded-4">
+                                                                            <div class="modal-header bg-primary text-white border-0 rounded-top-4">
+                                                                                <h5 class="modal-title" id="ageModalLabel">
+                                                                                    <i class="fa fa-bar-chart me-2"></i>
+                                                                                    Victim Age Distribution
+                                                                                </h5>
+                                                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                                            </div>
+
+                                                                            <div class="modal-body p-4 position-relative" style="overflow: hidden;">
+                                                                                <p class="text-muted mb-3">
+                                                                                    Analysis of reported victims categorized by age group over the selected timeframe.
+                                                                                </p>
+
+                                                                                <div class="ratio ratio-4x3" style="max-height: 60vh; position: relative; pointer-events: auto;">
+                                                                                    <canvas id="victimAgeDistributionChartModal" style="pointer-events: none;"></canvas>
+                                                                                </div>
+
+                                                                                <p class="mt-3 text-secondary">
+                                                                                    <strong>Summary:</strong> The data shows which age groups are more frequently victimized.
+                                                                                </p>
+                                                                            </div>
+
+                                                                            <div class="modal-footer border-0">
+                                                                                <button id="exportAgePdfBtn" type="button" class="btn btn-primary">
+                                                                                    <i class="fa fa-file-pdf-o me-1"></i> Export PDF
+                                                                                </button>
+                                                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                                                                    <i class="fa fa-times me-1"></i> Close
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <script>
-                                                    // charts.js
                                                     document.addEventListener("DOMContentLoaded", function() {
-                                                        // Fetch the chart data from the PHP file
-                                                        fetch('fetch_chart_data.php')
+                                                        fetch('../secure/crime_analysis_data.php')
                                                             .then(response => response.json())
                                                             .then(data => {
-                                                                // Crime Frequency per Street Chart
+                                                                // ——— 1) Crime Frequency per Street Chart ———
                                                                 const streetData = data.streetData;
                                                                 const ctxStreet = document.getElementById('crimesByStreetChart').getContext('2d');
                                                                 const streetLabels = streetData.map(item => item.street);
@@ -702,40 +808,57 @@ while ($row = $result->fetch_assoc()) {
                                                                         datasets: [{
                                                                             label: 'Number of Crimes',
                                                                             data: streetValues,
-                                                                            backgroundColor: ['rgba(255, 230, 0, 0.7)', 'rgba(219, 113, 52, 0.7)', 'rgba(241, 60, 15, 0.7)', 'rgba(204, 46, 46, 0.7)'],
-                                                                            borderColor: 'rgba(46, 204, 113, 1)',
+                                                                            backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                                                                            borderColor: 'rgba(255, 99, 132, 1)',
                                                                             borderWidth: 1
                                                                         }]
                                                                     },
                                                                     options: {
                                                                         responsive: true,
                                                                         maintainAspectRatio: false,
+                                                                        plugins: {
+                                                                            title: {
+                                                                                display: false,
+                                                                                text: 'Crime Frequency by Street',
+                                                                                font: {
+                                                                                    size: 18
+                                                                                }
+                                                                            },
+                                                                            tooltip: {
+                                                                                callbacks: {
+                                                                                    label: function(context) {
+                                                                                        return `${context.label}: ${context.formattedValue} crimes`;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        },
                                                                         scales: {
                                                                             x: {
-                                                                                display: false
+                                                                                ticks: {
+                                                                                    autoSkip: false,
+                                                                                    maxRotation: 90
+                                                                                },
+                                                                                title: {
+                                                                                    display: false,
+                                                                                    text: 'Street Name'
+                                                                                }
                                                                             },
                                                                             y: {
                                                                                 beginAtZero: true,
-                                                                                display: false
-                                                                            }
-                                                                        },
-                                                                        plugins: {
-                                                                            tooltip: {
-                                                                                callbacks: {
-                                                                                    label: (tooltipItem) => {
-                                                                                        return `Street: ${streetLabels[tooltipItem.index]}`;
-                                                                                    }
+                                                                                title: {
+                                                                                    display: true,
+                                                                                    text: 'Number of Crimes'
                                                                                 }
                                                                             }
                                                                         }
                                                                     }
                                                                 });
 
-                                                                // Crime Type Distribution Chart
-                                                                const crimeTypeData = data.crimeTypeData;
+                                                                // ——— 2) Crime Type Distribution Chart ———
+                                                                const crimeTypeData = data.crimeType;
                                                                 const ctxCrimeType = document.getElementById('crimeTypeDistributionChart').getContext('2d');
                                                                 const crimeTypeLabels = crimeTypeData.map(item => item.crimeType);
-                                                                const crimeTypeValues = crimeTypeData.map(item => item.crimeCount);
+                                                                const crimeTypeValues = crimeTypeData.map(item => item.total);
 
                                                                 new Chart(ctxCrimeType, {
                                                                     type: 'pie',
@@ -743,8 +866,20 @@ while ($row = $result->fetch_assoc()) {
                                                                         labels: crimeTypeLabels,
                                                                         datasets: [{
                                                                             data: crimeTypeValues,
-                                                                            backgroundColor: ['rgba(231, 76, 60, 0.7)', 'rgba(52, 152, 219, 0.7)', 'rgba(241, 196, 15, 0.7)', 'rgba(46, 204, 113, 0.7)'],
-                                                                            borderColor: ['rgba(231, 76, 60, 1)', 'rgba(52, 152, 219, 1)', 'rgba(241, 196, 15, 1)', 'rgba(46, 204, 113, 1)'],
+                                                                            backgroundColor: [
+                                                                                'rgba(54, 162, 235, 0.7)',
+                                                                                'rgba(255, 206, 86, 0.7)',
+                                                                                'rgba(75, 192, 192, 0.7)',
+                                                                                'rgba(153, 102, 255, 0.7)',
+                                                                                'rgba(255, 159, 64, 0.7)'
+                                                                            ],
+                                                                            borderColor: [
+                                                                                'rgba(54, 162, 235, 1)',
+                                                                                'rgba(255, 206, 86, 1)',
+                                                                                'rgba(75, 192, 192, 1)',
+                                                                                'rgba(153, 102, 255, 1)',
+                                                                                'rgba(255, 159, 64, 1)'
+                                                                            ],
                                                                             borderWidth: 1
                                                                         }]
                                                                     },
@@ -752,13 +887,20 @@ while ($row = $result->fetch_assoc()) {
                                                                         responsive: true,
                                                                         maintainAspectRatio: false,
                                                                         plugins: {
+                                                                            title: {
+                                                                                display: false,
+                                                                                text: 'Crime Type Distribution',
+                                                                                font: {
+                                                                                    size: 18
+                                                                                }
+                                                                            },
                                                                             legend: {
-                                                                                position: 'top'
+                                                                                position: 'right'
                                                                             },
                                                                             tooltip: {
                                                                                 callbacks: {
                                                                                     label: function(tooltipItem) {
-                                                                                        return tooltipItem.label + ': ' + tooltipItem.raw;
+                                                                                        return `${tooltipItem.label}: ${tooltipItem.raw}`;
                                                                                     }
                                                                                 }
                                                                             }
@@ -766,7 +908,7 @@ while ($row = $result->fetch_assoc()) {
                                                                     }
                                                                 });
 
-                                                                // Witness Age Distribution Chart
+                                                                // ——— 3) Victim Age Distribution Chart ———
                                                                 const ageData = data.ageData;
                                                                 const ctxAge = document.getElementById('witnessAgeDistributionChart').getContext('2d');
                                                                 const ageLabels = ageData.map(item => item.ageRange);
@@ -777,16 +919,32 @@ while ($row = $result->fetch_assoc()) {
                                                                     data: {
                                                                         labels: ageLabels,
                                                                         datasets: [{
-                                                                            label: 'Number of Witnesses',
+                                                                            label: 'Number of Victims',
                                                                             data: ageValues,
-                                                                            backgroundColor: 'rgba(155, 89, 182, 0.7)',
-                                                                            borderColor: 'rgba(155, 89, 182, 1)',
+                                                                            backgroundColor: 'rgba(255, 159, 64, 0.7)',
+                                                                            borderColor: 'rgba(255, 159, 64, 1)',
                                                                             borderWidth: 1
                                                                         }]
                                                                     },
                                                                     options: {
                                                                         responsive: true,
                                                                         maintainAspectRatio: false,
+                                                                        plugins: {
+                                                                            title: {
+                                                                                display: false,
+                                                                                text: 'Victim Age Distribution',
+                                                                                font: {
+                                                                                    size: 18
+                                                                                }
+                                                                            },
+                                                                            tooltip: {
+                                                                                callbacks: {
+                                                                                    label: function(context) {
+                                                                                        return `${context.label}: ${context.formattedValue} victims`;
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        },
                                                                         scales: {
                                                                             x: {
                                                                                 title: {
@@ -798,7 +956,7 @@ while ($row = $result->fetch_assoc()) {
                                                                                 beginAtZero: true,
                                                                                 title: {
                                                                                     display: true,
-                                                                                    text: 'Number of Witnesses'
+                                                                                    text: 'Number of Victims'
                                                                                 }
                                                                             }
                                                                         }
@@ -808,6 +966,7 @@ while ($row = $result->fetch_assoc()) {
                                                             .catch(error => console.error('Error fetching data:', error));
                                                     });
                                                 </script>
+
                                             </div>
                                         </div>
 
@@ -960,7 +1119,6 @@ while ($row = $result->fetch_assoc()) {
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
     <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- waves js -->
     <script src="assets/pages/waves/js/waves.min.js"></script>
@@ -976,17 +1134,382 @@ while ($row = $result->fetch_assoc()) {
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../secure/apis/leaflet/leaflet.js" crossorigin=""></script>
-    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
-    <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
     <!-- Script Dependencies -->
-    <script src="../javascript/map-full-stack.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <!-- At the bottom of your page before </body> -->
+    <!-- html2canvas & jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
     <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
-        tooltipTriggerList.forEach(function(el) {
-            new bootstrap.Tooltip(el)
+        // —— 1) Prepare data from PHP —— 
+        const monthlyData = <?php echo json_encode($data); ?>;
+        const typeData = <?php echo json_encode($crimeTypeData); ?>;
+
+        const monthLabels = monthlyData.map(o => o.month),
+            monthTotals = monthlyData.map(o => o.total),
+            typeLabels = typeData.map(o => o.crimeType),
+            typeTotals = typeData.map(o => o.total);
+
+        let monthChart = null,
+            typeChart = null;
+
+        // —— 2) Helper to wire up a modal’s chart —— 
+        function wireChartModal(modalId, canvasId, createChartFn) {
+            const modalEl = document.getElementById(modalId);
+
+            modalEl.addEventListener('shown.bs.modal', () => {
+                const ctx = document.getElementById(canvasId).getContext('2d');
+                const chartVar = (modalId === 'monthModal' ? monthChart : typeChart);
+
+                if (chartVar) {
+                    chartVar.resize();
+                    return;
+                }
+                const newChart = createChartFn(ctx);
+                if (modalId === 'monthModal') monthChart = newChart;
+                else typeChart = newChart;
+            });
+
+            modalEl.addEventListener('hidden.bs.modal', () => {
+                const chartVar = (modalId === 'monthModal' ? monthChart : typeChart);
+                if (chartVar) {
+                    chartVar.destroy();
+                    if (modalId === 'monthModal') monthChart = null;
+                    else typeChart = null;
+                }
+            });
+        }
+
+        // —— 3) Wire up your two modals —— 
+        wireChartModal('monthModal', 'crimesByMonthChartModal', ctx => new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: monthLabels,
+                datasets: [{
+                    label: 'Total Crimes',
+                    data: monthTotals
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        }));
+
+        wireChartModal('typeModal', 'crimeTypeBreakdownChartModal', ctx => new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: typeLabels,
+                datasets: [{
+                    data: typeTotals
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        }));
+
+        // —— 4) Export‑to‑PDF wiring —— 
+        const jsPDFctor = window.jspdf?.jsPDF || window.jsPDF;
+        if (!jsPDFctor) {
+            console.error('jsPDF not found—did you include its <script>?');
+        } else {
+            async function exportPDF(modalId, filename) {
+                const modal = document.getElementById(modalId);
+                const body = modal.querySelector('.modal-body');
+                const title = modal.querySelector('.modal-title').innerText;
+                const timestamp = new Date().toLocaleString();
+
+                // Snapshot chart area
+                const canvas = await html2canvas(body, {
+                    scale: 2,
+                    useCORS: true
+                });
+                const img = canvas.toDataURL('image/png');
+
+                // Setup PDF
+                const doc = new jsPDFctor({
+                    unit: 'pt',
+                    format: 'a4',
+                    orientation: 'portrait'
+                });
+
+                const pageWidth = doc.internal.pageSize.getWidth();
+                const margin = 40;
+                let cursorY = margin;
+
+                // Header
+                doc.setFont('helvetica', 'bold');
+                doc.setFontSize(22);
+                doc.text("Crime Statistics Report", pageWidth / 2, cursorY, {
+                    align: 'center'
+                });
+
+                cursorY += 25;
+
+                // Subheading
+                doc.setFontSize(14);
+                doc.setFont('helvetica', 'normal');
+                doc.setTextColor('#555');
+                doc.text(title, pageWidth / 2, cursorY, {
+                    align: 'center'
+                });
+
+                cursorY += 20;
+                doc.setFontSize(10);
+                doc.text(`Generated: ${timestamp}`, pageWidth / 2, cursorY, {
+                    align: 'center'
+                });
+
+                cursorY += 30;
+
+                // Chart Image
+                const imageProps = doc.getImageProperties(img);
+                const imgWidth = pageWidth - margin * 2;
+                const imgHeight = (imageProps.height * imgWidth) / imageProps.width;
+
+                doc.addImage(img, 'PNG', margin, cursorY, imgWidth, imgHeight);
+
+                // Footer
+                cursorY += imgHeight + 30;
+                doc.setDrawColor('#ccc');
+                doc.setLineWidth(0.5);
+                doc.line(margin, cursorY, pageWidth - margin, cursorY);
+
+                cursorY += 15;
+                doc.setFontSize(9);
+                doc.setTextColor('#999');
+                doc.text("© Barangay San Bartolome | Confidential", pageWidth / 2, cursorY, {
+                    align: 'center'
+                });
+
+                // Save
+                doc.save(filename);
+            }
+
+            document.getElementById('exportMonthPdfBtn')
+                .addEventListener('click', () => exportPDF('monthModal', 'Crime_Growth_per_Month.pdf'));
+
+            document.getElementById('exportTypePdfBtn')
+                .addEventListener('click', () => exportPDF('typeModal', 'Crime_Type_Breakdown.pdf'));
+        }
+    </script>
+
+    <script>
+        var streetModalChart, typeModalChart, ageModalChart;
+
+        // Reusable fetch call
+        async function fetchCrimeData() {
+            const response = await fetch('../secure/crime_analysis_data.php');
+            if (!response.ok) throw new Error('Failed to fetch crime data');
+            return await response.json();
+        }
+
+        // ——— Street Modal Chart ———
+        document.getElementById('streetModal').addEventListener('shown.bs.modal', async function() {
+            if (streetModalChart) return;
+
+            try {
+                const data = await fetchCrimeData();
+                const ctx = document.getElementById('crimesByStreetChartModal').getContext('2d');
+                const streetLabels = data.streetData.map(item => item.street);
+                const streetValues = data.streetData.map(item => item.crimeCount);
+
+                streetModalChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: streetLabels,
+                        datasets: [{
+                            label: 'Number of Crimes',
+                            data: streetValues,
+                            backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: false,
+                                text: 'Crime Frequency by Street',
+                                font: {
+                                    size: 18
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return `${context.label}: ${context.formattedValue} crimes`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                ticks: {
+                                    autoSkip: false,
+                                    maxRotation: 90
+                                },
+                                title: {
+                                    display: false,
+                                    text: 'Street Name'
+                                }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Number of Crimes'
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading street chart:', error);
+            }
+        });
+
+        // ——— Type Modal Chart ———
+        document.getElementById('typeModal').addEventListener('shown.bs.modal', async function() {
+            if (typeModalChart) return;
+
+            try {
+                const data = await fetchCrimeData();
+                const ctx = document.getElementById('crimeTypeBreakdownChartModal').getContext('2d');
+                const labels = data.crimeType.map(item => item.crimeType);
+                const values = data.crimeType.map(item => item.total);
+
+                typeModalChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: values,
+                            backgroundColor: [
+                                'rgba(54, 162, 235, 0.7)',
+                                'rgba(255, 206, 86, 0.7)',
+                                'rgba(75, 192, 192, 0.7)',
+                                'rgba(153, 102, 255, 0.7)',
+                                'rgba(255, 159, 64, 0.7)'
+                            ],
+                            borderColor: [
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'top'
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: (tooltipItem) => `${tooltipItem.label}: ${tooltipItem.raw}`
+                                }
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading crime type chart:', error);
+            }
+        });
+
+        // ——— Age Modal Chart ———
+        document.getElementById('ageModal').addEventListener('shown.bs.modal', async function() {
+            if (ageModalChart) return;
+
+            try {
+                const data = await fetchCrimeData();
+                const ctx = document.getElementById('victimAgeDistributionChartModal').getContext('2d');
+                const labels = data.ageData.map(item => item.ageRange);
+                const values = data.ageData.map(item => item.count);
+
+                ageModalChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Number of Victims',
+                            data: values,
+                            backgroundColor: 'rgba(255, 159, 64, 0.7)',
+                            borderColor: 'rgba(255, 159, 64, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Age Range'
+                                }
+                            },
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Number of Victims'
+                                }
+                            }
+                        },
+                        plugins: {
+                            tooltip: {
+                                callbacks: {
+                                    label: (tooltipItem) => `${tooltipItem.label}: ${tooltipItem.raw}`
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: "Victim's Age Distribution"
+                            }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading victim age chart:', error);
+            }
+        });
+
+        // ——— PDF Export Utility ———
+        async function exportChartToPDF(canvasId, title = 'Chart Report') {
+            const {
+                jsPDF
+            } = window.jspdf;
+            const doc = new jsPDF();
+
+            const canvas = document.getElementById(canvasId);
+            const imgData = canvas.toDataURL('image/png');
+
+            doc.setFontSize(18);
+            doc.text(title, 15, 20);
+            doc.addImage(imgData, 'PNG', 15, 30, 180, 100);
+            doc.save(`${title.replace(/\s+/g, '_').toLowerCase()}.pdf`);
+        }
+
+        // Button Listeners for Export
+        document.getElementById('exportStreetPdfBtn')?.addEventListener('click', () => {
+            exportChartToPDF('crimeFrequencyChartModal', 'Crime Frequency per Street');
+        });
+
+        document.getElementById('exportTypePdfBtn')?.addEventListener('click', () => {
+            exportChartToPDF('crimeTypeBreakdownChartModal', 'Crime Type Distribution');
+        });
+
+        document.getElementById('exportAgePdfBtn')?.addEventListener('click', () => {
+            exportChartToPDF('victimAgeDistributionChartModal', "Victim's Age Distribution");
         });
     </script>
 

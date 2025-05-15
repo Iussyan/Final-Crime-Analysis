@@ -32,8 +32,9 @@ $required = [
     'Witness Name' => $witnessName,
     'Witness Age'  => $witnessAge,
     'Witness Sex'  => $witnessSex,
-    'Contact No.'  => $contactNumber,
+    // 'Contact No.'  => $contactNumber, = Optional
 ];
+
 foreach ($required as $label => $value) {
     if ($value === '') {
         $errors[] = "$label is required.";
@@ -58,15 +59,15 @@ if ($time !== '' && !preg_match('/^(?:[01]\d|2[0-3]):[0-5]\d$/', $time)) {
 
 // Witness Age (integer, 0–120)
 if ($witnessAge !== '' && filter_var($witnessAge, FILTER_VALIDATE_INT, [
-        'options' => ['min_range' => 0, 'max_range' => 120]
-    ]) === false) {
+    'options' => ['min_range' => 0, 'max_range' => 120]
+]) === false) {
     $errors[] = "Witness Age must be an integer between 0 and 120.";
 } else {
     $witnessAge = (int)$witnessAge;
 }
 
 // Witness Sex (enum)
-$allowedSex = ['Male','Female'];
+$allowedSex = ['Male', 'Female'];
 if ($witnessSex !== '' && !in_array($witnessSex, $allowedSex, true)) {
     $errors[] = "Witness Sex must be 'Male' or 'Female'.";
 }
@@ -140,9 +141,11 @@ try {
 
     // 10. REDIRECT WITH SUCCESS FLAG
     $_SESSION['Success'] = true;
-    header("Location: ../process/crime_reporting.php");
+    // Redirect to vital_datas.php with a returnTo parameter
+    $returnTo = urlencode('../process/crime_reporting.php');
+    header("Location: ../process/vital_datas.php?returnTo=$returnTo");
     exit;
-
+    
 } catch (Exception $ex) {
     $conn->rollback();
     echo "<p>Error: " . htmlspecialchars($ex->getMessage()) . "</p>";

@@ -118,7 +118,7 @@ unset($_SESSION['loginSuccess']);
 
         .page-header:before {
             content: "";
-            color:rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
             background-color: rgba(0, 0, 0, 0.5);
             width: 100%;
             height: 100%;
@@ -153,6 +153,13 @@ unset($_SESSION['loginSuccess']);
                 float: left;
                 margin-top: 10px;
             }
+        }
+
+        .equal-height-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 240px;
+            /* adjust as needed */
         }
     </style>
 </head>
@@ -392,7 +399,7 @@ unset($_SESSION['loginSuccess']);
                                 </li>
                             </ul>
 
-                            <!-- <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Other Utilities</div>
+                            <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Other Utilities</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class=" ">
                                     <a href="user_manual.php" class="waves-effect waves-dark">
@@ -408,7 +415,7 @@ unset($_SESSION['loginSuccess']);
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                            </ul> -->
+                            </ul>
                         </div>
                     </nav>
                     <div class="pcoded-content">
@@ -419,7 +426,7 @@ unset($_SESSION['loginSuccess']);
                                     <div class="col-md-8">
                                         <div class="page-header-title">
                                             <h4 class="display-4 font-weight-bold mb-2">
-                                                Dashboard
+                                                C.H.A.R.M.
                                             </h4>
                                             <p class="lead mb-0">
                                                 Welcome to Crime Hotspot Analysis Reporting and Mapping System!
@@ -671,111 +678,64 @@ unset($_SESSION['loginSuccess']);
                                 <div class="page-wrapper">
                                     <!-- Page-body start -->
                                     <div class="page-body">
-                                        <div class="row">
+                                        <div class="row align-items-stretch">
                                             <!-- task, page, download counter  start -->
                                             <div class="col-xl-3 col-md-6">
-                                                <div class="card shadow-sm transition-hover" data-bs-toggle="modal" data-bs-target="#recentIncidentsModal" style="cursor: pointer;">
-                                                    <div class="card-body">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-8">
-                                                                <h4 class="text-primary"><?= $totalIncidents ?></h4>
-                                                                <h6 class="text-muted mb-0">Recent Incidents (last 15 days)</h6>
-                                                            </div>
-                                                            <div class="col-4 text-right">
-                                                                <i class="fa fa-newspaper-o fa-2x text-primary"></i>
-                                                            </div>
-                                                        </div>
+                                                <div class="card shadow-sm transition-hover equal-height-card d-flex flex-column text-center" data-bs-toggle="modal" data-bs-target="#recentIncidentsModal" style="cursor: pointer;">
+                                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                                        <i class="fa fa-newspaper-o fa-2x text-primary mb-3"></i>
+                                                        <h4 class="text-primary">Recent Incidents (last 15 days)</h4>
+                                                        <h5 class="text-muted mb-0"><?= $totalIncidents ?></h5>
                                                     </div>
-                                                    <div class="card-footer bg-primary text-white">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-9">
-                                                                <p class="mb-0">Click to Expand</p>
-                                                            </div>
-                                                            <div class="col-3 text-right">
-                                                                <i class="fa fa-line-chart text-white f-16"></i>
-                                                            </div>
-                                                        </div>
+                                                    <div class="card-footer bg-primary text-white mt-auto d-flex justify-content-between align-items-center px-3">
+                                                        <p class="mb-0">Click to Expand</p>
+                                                        <i class="fa fa-line-chart text-white f-16"></i>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="col-xl-3 col-md-6">
-                                                <div class="card shadow-sm transition-hover" data-bs-toggle="modal" data-bs-target="#totalCatsModal" style="cursor: pointer;">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-8">
-                                                                <h4 class="text-c-red"><?= $mostCommonCategory ?></h4>
-                                                                <h6 class="text-muted m-b-0">Most Prevalent Crime Category</h6>
-                                                            </div>
-                                                            <div class="col-4 text-right">
-                                                                <i class="fa fa-file-text-o f-28 text-c-red"></i>
-                                                            </div>
-                                                        </div>
+                                                <div class="card shadow-sm transition-hover equal-height-card d-flex flex-column text-center" data-bs-toggle="modal" data-bs-target="#totalCatsModal" style="cursor: pointer;">
+                                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                                        <i class="fa fa-file-text-o fa-2x text-c-red mb-3"></i>
+                                                        <h4 class="text-c-red">Most Prevalent Crime Category</h4>
+                                                        <h5 class="text-muted mb-0"><?= $mostCommonCategory ?></h5>
                                                     </div>
-                                                    <div class="card-footer bg-c-red">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-9">
-                                                                <p class="text-white m-b-0">Click to Expand</p>
-                                                            </div>
-                                                            <div class="col-3 text-right">
-                                                                <i class="fa fa-line-chart text-white f-16"></i>
-                                                            </div>
-                                                        </div>
+                                                    <div class="card-footer bg-c-red text-white mt-auto d-flex justify-content-between align-items-center px-3">
+                                                        <p class="mb-0">Click to Expand</p>
+                                                        <i class="fa fa-line-chart text-white f-16"></i>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="col-xl-3 col-md-6">
-                                                <div class="card shadow-sm transition-hover" data-bs-toggle="modal" data-bs-target="#riskyModal" style="cursor: pointer;">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-8">
-                                                                <h4 class="text-c-purple"><?= $mostAffectedStreet ?></h4>
-                                                                <h6 class="text-muted m-b-0">Most Risky Area</h6>
-                                                            </div>
-                                                            <div class="col-4 text-right">
-                                                                <i class="fa fa-map-signs f-28 text-c-purple"></i>
-                                                            </div>
-                                                        </div>
+                                                <div class="card shadow-sm transition-hover equal-height-card d-flex flex-column text-center" data-bs-toggle="modal" data-bs-target="#riskyModal" style="cursor: pointer;">
+                                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                                        <i class="fa fa-map-signs fa-2x text-c-purple mb-3"></i>
+                                                        <h4 class="text-c-purple">Most Risky Area</h4>
+                                                        <h5 class="text-muted mb-0"><?= $mostAffectedStreet ?></h5>
                                                     </div>
-                                                    <div class="card-footer bg-c-purple">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-9">
-                                                                <p class="text-white m-b-0">Click to Expand</p>
-                                                            </div>
-                                                            <div class="col-3 text-right">
-                                                                <i class="fa fa-line-chart text-white f-16"></i>
-                                                            </div>
-                                                        </div>
+                                                    <div class="card-footer bg-c-purple text-white mt-auto d-flex justify-content-between align-items-center px-3">
+                                                        <p class="mb-0">Click to Expand</p>
+                                                        <i class="fa fa-line-chart text-white f-16"></i>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="col-xl-3 col-md-6">
-                                                <div class="card shadow-sm transition-hover" data-bs-toggle="modal" data-bs-target="#crimeByDayModal" style="cursor: pointer;">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-8">
-                                                                <h4 class="text-c-lite-green"><?= $peakDay ?></h4>
-                                                                <h6 class="text-muted m-b-0">Peak Crime Day &amp; Time</h6>
-                                                            </div>
-                                                            <div class="col-4 text-right">
-                                                                <i class="fa fa-calendar f-28"></i>
-                                                            </div>
-                                                        </div>
+                                                <div class="card shadow-sm transition-hover equal-height-card d-flex flex-column text-center" data-bs-toggle="modal" data-bs-target="#crimeByDayModal" style="cursor: pointer;">
+                                                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                                        <i class="fa fa-calendar fa-2x text-c-lite-green mb-3"></i>
+                                                        <h4 class="text-c-lite-green">Peak Crime Day &amp; Time</h4>
+                                                        <h5 class="text-muted mb-0"><?= $peakDay ?></h5>
                                                     </div>
-                                                    <div class="card-footer bg-c-lite-green">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-9">
-                                                                <p class="text-light m-b-0">Click to Expand</p>
-                                                            </div>
-                                                            <div class="col-3 text-right">
-                                                                <i class="fa fa-line-chart text-light f-16"></i>
-                                                            </div>
-                                                        </div>
+                                                    <div class="card-footer bg-c-lite-green text-white mt-auto d-flex justify-content-between align-items-center px-3">
+                                                        <p class="mb-0">Click to Expand</p>
+                                                        <i class="fa fa-line-chart text-white f-16"></i>
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <!-- task, page, download counter  end -->
                                             <div class="col-xl-14 col-md-12">
                                                 <div class="card shadow-sm transition-hover">

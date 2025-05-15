@@ -50,7 +50,7 @@ $insert->bind_param("sssssss", $username, $hashedPassword, $firstName, $lastName
 
 if ($insert->execute()) {
     $_SESSION['Success'] = true;
-    header("Location: ../temp/manage_users.php");
+    header("Location: ../process/manage_users.php");
     exit;
 } else {
     echo "Failed to add user.";

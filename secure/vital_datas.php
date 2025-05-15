@@ -170,7 +170,3 @@ if ($conn->multi_query("CALL getCrimeByDayOfWeek();")) {
 $_SESSION['dayCrimeStats'] = $dayCrimeStats;
 
 $conn->close();
-
-// After refreshing data, redirect back to dashboard
-header("Location: ../process/dashboard.php");
-exit();

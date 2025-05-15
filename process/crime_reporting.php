@@ -398,7 +398,7 @@ unset($_SESSION['loginSuccess']);
                                 </li>
                             </ul>
 
-                            <!-- <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Other Utilities</div>
+                            <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Other Utilities</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class=" ">
                                     <a href="user_manual.php" class="waves-effect waves-dark">
@@ -414,7 +414,7 @@ unset($_SESSION['loginSuccess']);
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                            </ul> -->
+                            </ul>
                         </div>
                     </nav>
                     <div class="pcoded-content">
